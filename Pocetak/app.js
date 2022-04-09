@@ -23,12 +23,19 @@
 // conlose.log(posiljatelj, "salje dc", primatelj);
 
 // document.getElementById("demo").style.fontSize = "35px";
-document.getElementById("demo").innerHTML = 5 * 6;
-// document.getElementById("demo").innerHTML = 2+2;
-document.getElementById("demo").innerHTML = 1-1;
-document.write (10+10);
-window.alert(5 + 6);
-alert(5 + 6);
-
-
+// document.getElementById("demo").innerHTML = 5 * 6;
+// // document.getElementById("demo").innerHTML = 2+2;
+// document.getElementById("demo").innerHTML = 1-1;
+// document.write (10+10);
+// window.alert(5 + 6);
+// alert(5 + 6);
+// var x = document.getElementById("demo").innerHTML = 10+10;
+// console.log (x);
+// var x = document.getElementById("demo").innerHTML = 10-2;
+// console.log (x)
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello Dolly!";
+}
+myFunction();
+console.log(typeof myFunction);
 
