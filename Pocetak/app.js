@@ -39,3 +39,16 @@ document.getElementById("demo").innerHTML = "Hello Dolly!";
 myFunction();
 console.log(typeof myFunction);
 
+function myFunction (){
+document.getElementById("proba").innerHTML = "hello"
+}
+myFunction ();
+console.log (typeof myFunction);
+
+var x = 24;
+document.write(x);
+var denis = 50;
+document.write(denis)
+var y = 100;
+document.write(y);
+
