@@ -5,8 +5,13 @@
 
 // var denis = -24.55555;
 // document.write (denis);
-// var x = "danas je nedelja. ja zivim u np.;"
+
+
+// var x = "danas je nedelja ja zivim u np.;"
 // document.write (x);
+
+
+
 
 // var x = 5;
 // var y = 6;
@@ -41,8 +46,27 @@
 // let tr = "nedelja";
 // let pr = "ponedeljak";
 // document.getElementById("demo").innerHTML = de + "<br>" + tr + "<br>" + pr;
-const proba = 100;
-let tr = "nedelja";
-let pr = "ponedeljak";
-let cc = "utorak"
-document.getElementById("demo").innerHTML = proba + "<br>" + tr + "<br>" + pr + "<br>" + cc;
+    
+//  <br> Variabl
+
+// const proba = 100;
+// let tr = "nedelja";
+// let pr = "ponedeljak";
+// let cc = "utorak"
+// document.getElementById("demo").innerHTML = proba + "<br>" + tr + "<br>" + pr + "<br>" + cc;
+
+// var x = 100;
+// var y = 200;
+// var d = 100;
+// var f = x + y + d;
+// // document.getElementById("demo").innerHTML = +f;
+// document.write ( f)
+    // Mnozenje variabl
+// var x = 100;
+// var y = x * 3;
+// document.write(y)
+
+var x = 150 + " proba";
+document.write(x)
+var y = "test" + 10 / 2;
+document.write(y);
