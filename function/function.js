@@ -19,7 +19,7 @@
 //  function sa vise parametra:
 
 function fun (jedan, dva, tri){
-    document.write (jedan + " je bolji od " + dva + tri );
+    document.write (jedan + " je bolja od " + dva + tri );
     
 }
 fun ("Fifa", "pesa", " i od f1")
