@@ -66,15 +66,28 @@
 //     document.write("ovo nije tacno");
 // }
 
-var ime = "denis";
-var prezime = "mahmutovic"
-if(ime == "denis"){
-    if(prezime == "mahmutovica"){
-        document.write("mozes uci na ovaj sajt");
-    }else{
-        document.write("ne mozes uci na sajt");
-    }
-}
+// var ime = "denis";
+// var prezime = "mahmutovic"
+// if(ime == "denis"){
+//     if(prezime == "mahmutovica"){
+//         document.write("mozes uci na ovaj sajt");
+//     }else{
+//         document.write("ne mozes uci na sajt");
+//     }
+// }
+
+            // if vise islova
+
+// var username = "denis"
+// var gmail = "dmahmutovic55"
+// if(username == "denis"){
+//     if(gmail == "dmahmutovic55"){
+//         document.write("login")
+//     }
+//     else{
+//         document.write("Sorry, your password was incorrect. Please double-check your password.")
+//     }
+// }
 
 
 
