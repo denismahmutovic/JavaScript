@@ -33,22 +33,48 @@
 // console.log (x);
 // var x = document.getElementById("demo").innerHTML = 10-2;
 // console.log (x)
-function myFunction() {
-document.getElementById("demo").innerHTML = "Hello Dolly!";
-}
-myFunction();
-console.log(typeof myFunction);
+// function myFunction() {
+// document.getElementById("demo").innerHTML = "Hello Dolly!";
+// }
+// myFunction();
+// console.log(typeof myFunction);
 
-function myFunction (){
-document.getElementById("proba").innerHTML = "hello"
-}
-myFunction ();
-console.log (typeof myFunction);
+// function myFunction (){
+// document.getElementById("proba").innerHTML = "hello"
+// }
+// myFunction ();
+// console.log (typeof myFunction);
 
-var x = 24;
-document.write(x);
-var denis = 50;
-document.write(denis)
-var y = 100;
-document.write(y);
+// var x = 24;
+// document.write(x);
+// var denis = 50;
+// document.write(denis)
+// var y = 100;
+// document.write(y);
+
+
+// var ime = 10;
+// var godine = 10
+// if (ime <= godine){
+//     document.write ("ovo je tacno");
+// }
+
+// if (2==26){
+//     document.write("ovo je tacno");
+// }
+// else{
+//     document.write("ovo nije tacno");
+// }
+
+var ime = "denis";
+var prezime = "mahmutovic"
+if(ime == "denis"){
+    if(prezime == "mahmutovica"){
+        document.write("mozes uci na ovaj sajt");
+    }else{
+        document.write("ne mozes uci na sajt");
+    }
+}
+
+
 
