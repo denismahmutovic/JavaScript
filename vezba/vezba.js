@@ -23,4 +23,30 @@ document.getElementById("demo").innerText = "ddss"
 // console.log(broj);
 // console.log( drugi_broj)
 
+   //ubacinje variabli unutar stringova
+// var ime = "denis";
+// var prezime = "mahmutovic"
+// var godine = 26
+// var recenica = `ja sam ${ime}  ${prezime} imam ${godine}`
 
+// console.log (recenica);
+
+// var prvi_broj = 11;
+// var drugi_broj = 12
+// if(prvi_broj < drugi_broj){
+//     console.log("prvi broj je manji od drugog");}
+//     else {
+//         console.log("prvi broj nije manji od drugog");
+//     }
+    
+//     console.log(prvi_broj < drugi_broj)
+
+var vreme = 21;
+if (vreme < 10){
+    console.log("dobro jutro!");}
+    else if(vreme < 20)
+        console.log("dobar dan");
+    else{
+        console.log("dobro vece")
+    }
+    
