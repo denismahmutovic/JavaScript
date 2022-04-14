@@ -1,4 +1,4 @@
-document.getElementById("demo").innerText = "ddss"
+document.getElementById("demo").innerText = "Vezba-home"
 
 // var broj = 65;
 // var rez = "5";
@@ -65,17 +65,26 @@ document.getElementById("demo").innerText = "ddss"
     // }
 
     // Brojac
-
-    var novcanice = 25
-    var  vrednost_novcanice = 10;
-    var brojac = 0
-    var izbrojane_novcanice = 0
-    while (brojac < 25){
-        izbrojane_novcanice++;
-        console.log(izbrojane_novcanice);
-        brojac ++
-    }
-
+   
         
+
+    // var novcanice = 25
+    // var  vrednost_novcanice = 10;
+    // var brojac = 0
+    // var izbrojane_novcanice = 0
+    // while (brojac < 25){
+    //     izbrojane_novcanice++;
+    //     console.log(izbrojane_novcanice);
+    //     brojac ++
+    // }
+    
+ //nizovi
+ var novcanice = [10, 5, 20, 5, 10, 100, 20, 50];
+ var broj_novcanica = novcanice.length;
+ var brojac = 0;
+ while(brojac < broj_novcanica){
+     console.log(novcanice[brojac])
+     brojac++
+ }
 
        
