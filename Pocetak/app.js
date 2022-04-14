@@ -88,6 +88,18 @@
 //         document.write("Sorry, your password was incorrect. Please double-check your password.")
 //     }
 // }
+                //  dozivamo && vise uslova
+var ime = "denis"
+var prezime = 'mahmutovic'
+// if ( (ime == 'denis') && (prezime == "mahmutovic")   ){
+//     document.write("doneee");
+
+// }
+
+                    // dozivamo samo jedan uslov ||
+if ( (ime === "denis") || (prezime == "mahmutovic") ) {
+    document.write("donee2")
+}
 
 
 
