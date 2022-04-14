@@ -126,9 +126,49 @@ document.getElementById("demo").innerText = "Vezba-home"
 // }
 // console.log(`ime:${osoba.ime}, godine:${osoba.godine}, grad: ${osoba.grad} `)
 
-                            //doneee
+                            //done
 
 // var osoba ={
 //     ime: "denis", prezime:"mahmutovic",  godine: 24, grad:"Novi pazar"
 // }
 // console.log(`ime:${osoba.ime}, prezime: ${osoba.prezime}, godine:${osoba.godine}, grad:${osoba.grad}`)
+
+
+var nekretnine = {
+    stan: 70000,
+    kuca: 150000,
+    plac: 30000
+};
+// procacun za stan od 15 godina.
+racunanje_mesecne_rate (15, "stan")
+
+//proracun za Placac od 5 godina
+racunanje_mesecne_rate (5, "plac")
+
+//proracun za kucu 20 goduna
+racunanje_mesecne_rate (20,"kuca")
+
+// OVA FUNKCIJA IZRACUNAVA MESECNU RATU ZA ORDEDJENU  NEKRETNINU NA ORDJEDJENI BROJ GODINA.
+function racunanje_mesecne_rate(godine, vrsta_nekretnina){
+    var mesec = godine * 12;
+    var rata = nekretnine [vrsta_nekretnina] / mesec;
+    rata = rata.toFixed(2)
+    // console.log(rata)
+    console.log("------------------")
+
+    //  console.log(mesec + " mesec")
+//  console.log (rata + "eura")
+ console.log(`mesecna rata za ${vrsta_nekretnina} iznosi ${rata} eura na ${godine} godina` )
+}
+
+
+
+
+
+
+// var mesec = 10 * 12;
+// var rata = nekretnine.stan / mesec;
+// rata = rata.toFixed(2);
+// console.log(mesec + "mesec")
+// console.log (rata + "eura")
+// console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
