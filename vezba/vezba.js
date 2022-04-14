@@ -41,12 +41,41 @@ document.getElementById("demo").innerText = "ddss"
     
 //     console.log(prvi_broj < drugi_broj)
 
-var vreme = 21;
-if (vreme < 10){
-    console.log("dobro jutro!");}
-    else if(vreme < 20)
-        console.log("dobar dan");
-    else{
-        console.log("dobro vece")
+// var vreme = 21;
+// if (vreme < 10){
+//     console.log("dobro jutro!");}
+//     else if(vreme < 20)
+//         console.log("dobar dan");
+//     else{
+//         console.log("dobro vece")
+//     }
+    // var mjesec = 7
+    // switch(mjesec){
+    //     case 1:
+    //         console.log("januar")
+    //         break   
+    //         case 2:
+    //             console.log("februar")
+    //             break
+    //             case 6:
+    //                 console.log("jun")
+    //                 case 7:
+                        
+    //                     console.log("jul")
+    // }
+
+    // Brojac
+
+    var novcanice = 25
+    var  vrednost_novcanice = 10;
+    var brojac = 0
+    var izbrojane_novcanice = 0
+    while (brojac < 25){
+        izbrojane_novcanice++;
+        console.log(izbrojane_novcanice);
+        brojac ++
     }
-    
+
+        
+
+       
