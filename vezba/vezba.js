@@ -79,12 +79,56 @@ document.getElementById("demo").innerText = "Vezba-home"
     // }
     
  //nizovi
- var novcanice = [10, 5, 20, 5, 10, 100, 20, 50];
- var broj_novcanica = novcanice.length;
- var brojac = 0;
- while(brojac < broj_novcanica){
-     console.log(novcanice[brojac])
-     brojac++
- }
+//  var novcanice = [10, 5, 20, 5, 10, 100, 20, 50];
+//  var broj_novcanica = novcanice.length;
+//  var brojac = 0;
+//  while(brojac < broj_novcanica){
+     
+//      console.log(novcanice[brojac])
+//      brojac++
+//  }
+// var novcanice = [10, 20, 30, 40, 50, 60, 70, 80]
+// var broj_novcanica = novcanice.length;
+// var brojac = 0;
+// while(brojac < broj_novcanica){
+//     console.log('----------------------------');
+//     console.log("uslov prosao");
+//     console.log(`novcanice na pozici [${brojac}]`)
+//     brojac ++
+// }
 
-       
+// for(var novcanica of novcanice){
+//     console.log(novcanica);
+// }
+// for (var pare of novcanice){
+//     console.log(pare)
+// }
+
+// var automobili = ["audi", "Bmw", "mercedes", "porshe"];
+// for (var automobil of automobili){
+//     console.log (automobil) 
+// }
+
+// var automobili ={
+//     audi:['7000', '2017', 'q7'], bmw: ['50000', '2016', '330D']
+    
+
+//     }
+// for (auto in automobili){
+//     var naziv = automobili;
+//     console.log(naziv)
+//     console.log(automobili[auto]);
+// }
+
+// var osoba ={
+//     ime: "denis", godine: "26", grad: "Novi Pazar"
+    
+// }
+// console.log(`ime:${osoba.ime}, godine:${osoba.godine}, grad: ${osoba.grad} `)
+
+                            //doneee
+
+// var osoba ={
+//     ime: "denis", prezime:"mahmutovic",  godine: 24, grad:"Novi pazar"
+// }
+// console.log(`ime:${osoba.ime}, prezime: ${osoba.prezime}, godine:${osoba.godine}, grad:${osoba.grad}`)
