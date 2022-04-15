@@ -14,8 +14,8 @@
     
 }
 .addbtn{
-    padding: 10px;
-    width: 25%;
+    padding: 7px;
+    width: 23%;
     background: #d9d9d9;
     color: #555;
     text-align: center;
@@ -23,6 +23,9 @@
     transition: 0.3s;
     border-radius: 0;
     float: right;
+    position: relative;
+    bottom: 32px;
+    
     
 }
 input{
@@ -75,8 +78,8 @@ ul li .checked::before{
     top: 0;
     padding: 12px 16px 12px 16px;
 }
-close:hover{
-    background-color: f44336;
+.close:hover{
+    background-color: #f44336;
     color: white;
 }
 .container::after{

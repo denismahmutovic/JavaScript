@@ -1,4 +1,4 @@
-var myNodelist = document.getElementsByTagName("li");
+var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -6,6 +6,7 @@ for (i = 0; i < myNodelist.length; i++) {
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
+  
 }
 
 // Click on a close button to hide the current list item
