@@ -169,9 +169,9 @@ nov_cod.classList = "dasas"
 
 
 
-// var mesec = 10 * 12;
-// var rata = nekretnine.stan / mesec;
-// rata = rata.toFixed(2);
-// console.log(mesec + "mesec")
-// console.log (rata + "eura")
-// console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
+var mesec = 10 * 12;
+var rata = nekretnine.stan / mesec;
+rata = rata.toFixed(2);
+console.log(mesec + "mesec")
+console.log (rata + "eura")
+console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
