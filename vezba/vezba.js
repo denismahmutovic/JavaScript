@@ -160,18 +160,49 @@ document.getElementById("demo").innerText = "Vezba-home"
 // //  console.log (rata + "eura")
 //  console.log(`mesecna rata za ${vrsta_nekretnina} iznosi ${rata} eura na ${godine} godina` )
 // }
-var nov_cod =document.createElement("div")
-console.log (nov_cod)
-nov_cod.classList = "dasas"
+// var nov_cod =document.createElement("div")
+// console.log (nov_cod)
+// nov_cod.classList = "dasas"
 
 
 
 
 
 
-var mesec = 10 * 12;
-var rata = nekretnine.stan / mesec;
-rata = rata.toFixed(2);
-console.log(mesec + "mesec")
-console.log (rata + "eura")
-console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
+// var mesec = 10 * 12;
+// var rata = nekretnine.stan / mesec;
+// rata = rata.toFixed(2);
+// console.log(mesec + "mesec")
+// console.log (rata + "eura")
+// console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
+
+
+
+
+
+const reviews = [
+   {
+      id:1,
+      name: "sara",
+      job: "novinar",
+      img : "http://127.0.0.1:5500/vezba/radius1.webp ",
+      Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque"
+   }
+
+   {
+      id:1,
+      name: "sara",
+      job: "novinar",
+      img : "http://127.0.0.1:5500/vezba/radius1.webp ",
+      Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque",
+   }
+];
+const img = document.getElementById("person-img");
+const author = document.getElementById("author");
+
+const job = document.getElementById("job");
+const info = document.getElementById("info");
+const prevBtn = document.querySelector(".prev-btn");
+const next = document.querySelector(".next-btn");
+const randomBtn = document.querySelector(".random-btn");
+

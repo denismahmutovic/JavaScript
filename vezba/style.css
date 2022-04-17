@@ -1,0 +1,27 @@
+.container{
+    margin: 100px auto;
+    text-align: center;
+}
+.kartica img{
+    border-radius: 50%;
+    width: 200px;
+
+}
+.kartica{
+    text-align: center;
+}
+#strelice {
+    color: #6666ff;
+    margin: 10px;
+    font-size: 30px;
+}
+/* button{ */
+    margin-left: 570px;
+    background: #6666ff;
+    border-radius: 50px;
+    color: white;
+    width: 200px;
+    border: none;
+    height: 50px;
+    font-size: 30px;
+    }

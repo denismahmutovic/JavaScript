@@ -1,7 +1,6 @@
-function pokreni(dugme){
-    let nazivDugmeta = dugme.innerHTML;
-    let = klasaDugmeta =dugme.classList;
-    console.log(klasaDugmeta);
-    let message = document.querySelector("#klickdugme");
-    message.innerHTML = nazivDugmeta;
+// f
+function test () {
+let linkovi = document.querySelectorAll(".glavni-div .inner-div span  .moj-link");
+console.log(linkovi);
+
 }
