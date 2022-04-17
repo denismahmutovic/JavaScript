@@ -1,5 +1,7 @@
 function pokreni(dugme){
-    let = document.querySelector("#klickdugme");
-    poruka.innerText = "pozdrav"
-    console.log(dugme);
+    let nazivDugmeta = dugme.innerHTML;
+    let = klasaDugmeta =dugme.classList;
+    console.log(klasaDugmeta);
+    let message = document.querySelector("#klickdugme");
+    message.innerHTML = nazivDugmeta;
 }
