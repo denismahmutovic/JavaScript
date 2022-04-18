@@ -1,4 +1,4 @@
-document.getElementById("demo").innerText = "Vezba-home"
+// document.getElementById("demo").innerText = "Vezba-home"
 
 // var broj = 65;
 // var rez = "5";
@@ -183,22 +183,18 @@ document.getElementById("demo").innerText = "Vezba-home"
 const reviews = [
    {
       id:1,
-      name: "sara",
+      name: "marina",
       job: "novinar",
-      img : "http://127.0.0.1:5500/vezba/radius1.webp ",
-      Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque"
-   }
+      img : "https://html.com/wp-content/uploads/flamingo.webp",
+      Text: "dnsL"  
+   } 
 
-   {
-      id:1,
-      name: "sara",
-      job: "novinar",
-      img : "http://127.0.0.1:5500/vezba/radius1.webp ",
-      Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque",
-   }
+   
+      
 ];
 const img = document.getElementById("person-img");
 const author = document.getElementById("author");
+console.log (author);
 
 const job = document.getElementById("job");
 const info = document.getElementById("info");
@@ -206,3 +202,13 @@ const prevBtn = document.querySelector(".prev-btn");
 const next = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
+let = currentItem = 0;
+
+   window.addEventListener("DOMContentLoaded", function () {
+   const item = reviews[currentItem];
+   img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.Text;
+
+});
