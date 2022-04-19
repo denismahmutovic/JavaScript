@@ -9,19 +9,22 @@ body{
     
 }
 img{
-    width: 250px;
+    width: 300px;
     height: auto;
+    margin-top: 10px;
 }
 h1{
     text-align: center;
     text-transform: capitalize;
 }
 .single-item{
-   border: solid 2px red;
-   width: 300px;
-   height: 60vh;
+   /* border: solid 2px red; */
+   width: 350px;
+   height: 70vh;
    padding-left: 10px;
    display: inline-block;
+   box-shadow: 0 0 3rem rgba(0, 0, 0, .15); 
+   margin: 30px;
 }
 .si-content {
     text-align: center;
@@ -33,6 +36,12 @@ h1{
 	text-align: center;
 	font-size: 18px;    
 }
+.cart-single-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;}
+
 .cart{
     height: 30vh;
 	background-image: url('./korpa.png');
@@ -47,4 +56,46 @@ h1{
     margin-right: 20px;
 
 }
-
+.total{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+}
+.cart-single-item button {
+	padding: 5px;
+}
+.a{
+    border: solid 2px #0050aa;
+    width: 100px;
+    height: 24px;
+    background-color: #0050aa;
+    position: relative;
+    bottom: 200px;
+    left: 220px;
+}
+.a h4{
+    color: white;
+}
+.price{
+    font-size: 40px;
+    font-weight: 900;
+    border: solid grey 1px;
+    width: 120px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+input{
+    position: relative;
+    /* top: 120px; */
+}
+button{
+    position: relative;
+    /* top: 120px; */
+}
+.b img{
+    border: solid 2px #0050aa;
+    background-color: #0050aa;
+    width: 40px;
+}
