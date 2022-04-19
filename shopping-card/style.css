@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif; 
+    
+}
+img{
+    width: 250px;
+    height: auto;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+.single-item{
+   border: solid 2px red;
+   width: 300px;
+   height: 60vh;
+   padding-left: 10px;
+   display: inline-block;
+}
+.si-content {
+    text-align: center;
+}
+.single-item input{
+
+    height: 40px;
+	width: 60px;
+	text-align: center;
+	font-size: 18px;    
+}
+.cart{
+    height: 30vh;
+	background-image: url('./korpa.png');
+	background-size: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+    border: solid red 2px;
+    width: 300px;
+    height: 70vh;
+    float: right;
+    margin-right: 20px;
+
+}
+

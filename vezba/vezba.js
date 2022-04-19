@@ -186,7 +186,14 @@ const reviews = [
       name: "marina",
       job: "novinar",
       img : "https://html.com/wp-content/uploads/flamingo.webp",
-      Text: "dnsL"  
+      Text: "dnsL"
+   },
+   {
+      id:2,
+      name: "sara",
+      job: "matemarcar",
+      img : "https://res.cloudinary.com/demo/image/upload/if_ar_gt_3:4_and_w_gt_300_and_h_gt_200,c_crop,w_300,h_200/sample.jpg",
+      Text: "dnsL" 
    } 
 
    
@@ -194,7 +201,7 @@ const reviews = [
 ];
 const img = document.getElementById("person-img");
 const author = document.getElementById("author");
-console.log (author);
+
 
 const job = document.getElementById("job");
 const info = document.getElementById("info");
@@ -204,7 +211,8 @@ const randomBtn = document.querySelector(".random-btn");
 
 let = currentItem = 0;
 
-   window.addEventListener("DOMContentLoaded", function () {
+   window.addEventListener("DOMContentLoaded", 
+   function () {
    const item = reviews[currentItem];
    img.src = item.img;
    author.textContent = item.name;
@@ -212,3 +220,22 @@ let = currentItem = 0;
    info.textContent = item.Text;
 
 });
+
+
+      function showPerson (person){
+         const item = reviews [person];
+         img.src = item.img;
+         author.textContent = item.name;
+         job. textContent = item.job;
+         info.textContent = item.Text;
+
+      }
+      nextBtn.addEventListener("click",function(){
+         currentItem++;
+         if(currentItem > reviews.length - 1){
+            currentItem = 0;
+
+         }
+      
+      showPerson(currentItem);
+      });

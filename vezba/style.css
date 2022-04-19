@@ -25,3 +25,9 @@
     height: 50px;
     font-size: 30px;
     } */
+ .prev-btn, .next-btn{
+     color: red;
+ }
+ button{
+     background-color:aqua;
+ }
