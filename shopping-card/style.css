@@ -20,7 +20,7 @@ h1{
 .single-item{
    /* border: solid 2px red; */
    width: 350px;
-   height: 70vh;
+   height: 80vh;
    padding-left: 10px;
    display: inline-block;
    box-shadow: 0 0 3rem rgba(0, 0, 0, .15); 
@@ -83,12 +83,14 @@ h1{
     border: solid grey 1px;
     width: 120px;
     position: relative;
-    top: 50px;
+    /* top: 30px; */
     left: 200px;
+    z-index: 0;
+    
 }
 input{
     position: relative;
-    /* top: 120px; */
+    top: 0px;
 }
 button{
     position: relative;
@@ -97,5 +99,16 @@ button{
 .b img{
     border: solid 2px #0050aa;
     background-color: #0050aa;
-    width: 40px;
+    width: 60px;
+    height: 60px;
+    
+}
+.c{
+    border: solid red 2px;
+    background: red;
+    width: 100px;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    left: 220px;
 }

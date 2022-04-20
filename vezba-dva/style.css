@@ -1,0 +1,22 @@
+.container{
+    margin: 100px auto;
+    margin-left: 500px;
+    text-transform: capitalize;
+}
+body{
+    color:darkslategray;
+}
+h1{
+    font-size: 50px;
+}
+#value{
+    font-size: 50px;
+    margin-left: 85px;
+    font-weight: bold;
+    
+}
+.btn{
+    margin: 0.2rem;
+    
+
+}

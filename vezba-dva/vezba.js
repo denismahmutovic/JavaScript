@@ -1,6 +1,13 @@
 // f
-function test () {
-let linkovi = document.querySelectorAll(".glavni-div .inner-div span  .moj-link");
-console.log(linkovi);
+let count = 0 // pocetna vrednost 0
 
-}
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function(btn){
+    btn.addEventListener ("click", function(e) {
+
+    const styles = e.currentTarget.classList;
+        
+    })
+})
