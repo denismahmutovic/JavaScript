@@ -1,4 +1,4 @@
-// f
+
 let count = 0 // pocetna vrednost 0
 
 const value = document.querySelector("#value");
@@ -12,19 +12,19 @@ btns.forEach(function(btn){
     if (styles.contains ("decrease")){
         count --;
 
-    } else if (styles.contains("increase")) {
+    } else if (styles.contains("inrease")) {
         count ++;
-    }else{
+    } else{ 
         count = 0;
     }
         if (count > 0){
-            value.style.color = "green";
+            value.style.color = "#f9346c";
         } 
         if (count < 0) {
             value.style.color = "red";
         } 
         if (count === 0){
-            value.style.color = "222"
+            value.style.color = "green";
         }
 
         value.textContent = count;
