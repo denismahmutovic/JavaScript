@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+
+}
+.container{
+    margin: 100px auto;
+    
+}
+.number{
+    margin-top: 1rem;
+}
+.btns{
+    margin-top: 1rem;
+}
+.btn{
+    width: 50px;
+    background-color: goldenrod;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.number{
+    width: 100%;
+    height: 30px;
+    border: solid 3px goldenrod;
+}
+.result{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid goldenrod;
+    margin-top: 1rem;
+}
