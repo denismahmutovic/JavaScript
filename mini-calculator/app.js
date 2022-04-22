@@ -1,29 +1,26 @@
-const num1 =document.querySelector(".num1");
-const num2 = document.querySelector(".num2");
-const result = document.querySelector(".result");
-const btns = document.querySelectorAll(".btn");
+const buttons = document.querySelectorAll('button');
 
-btns.forEach(function (btn) {
-    btn.addEventListener("click",function(e){
-        const styles = e.currentTarget.classList;
+const display = document.querySelector('.display');
 
-        if( styles.contains("plus")){
-            result = num1 + num2;
-        }
-        if(styles.contains ("minus")){
-            result = num1 -num2;
+buttons.forEach(function(button) {
+  button.addEventListener('click', calculate);
+});
 
-        }
-        if(styles.contains("devision")){
-            result = num1 / num2;
-        }
-        if(styles.contains("multiplication")){
-            result = num1 * num2;
-        }
-        
-    })
-})
+function calculate(event) {
 
+  const clickedButtonValue = event.target.value;
 
+  if (clickedButtonValue === '=') {
+  
+    if (display.value !== '') 
+    {
+      display.value = eval(display.value);
+    }
+  } else if (clickedButtonValue === 'C') 
+  {
+    display.value = '';
+  } else {
 
-    
+    display.value += clickedButtonValue;
+  }
+}
