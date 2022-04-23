@@ -31,3 +31,17 @@ btns.forEach(function(btn){
     
     });
 });
+
+
+let vrednost = 0;
+let value = document.querySelector("#value");
+let btns = document.querySelectorAll(".btn");
+
+btns.forEach(function(btn) {
+    btn,addEventListener("click",function(e){
+        const styles = e.currentTarget.classList;
+        if()
+    }
+    )
+}
+)
