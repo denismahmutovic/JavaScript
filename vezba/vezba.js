@@ -262,12 +262,34 @@
 // window.addEventListener('load', ucitaj);
 
 
-function proba (){
-   var text = document.querySelector("#demo")
-   let a = 60;
-   let b = 60;
-   let c = a+b;
-   text.innerHTML = c
+// function proba (){
+//    var text = document.querySelector("#demo")
+//    let a = 60;
+//    let b = 60;
+//    let c = a+b;
+//    text.innerHTML = c
 
+// }
+// window.addEventListener ("load", proba)
+
+
+
+
+
+
+function izracunaj (){
+   let a = document.querySelector("#input1")
+   let b = document.querySelector("#input2")
+   let brA = Number (a.value)
+   let brB = Number (b.value)
+   let c = brA + brB;
+   document.querySelector("#rez").innerText= c;
 }
-window.addEventListener ("load", proba)
+
+function init (){
+   let a = document.querySelector("#input1")
+   let b =document.querySelector("#input2")
+   a.addEventListener("change", izracunaj)
+   b.addEventListener("change", izracunaj)
+}
+window.addEventListener("load", init)
