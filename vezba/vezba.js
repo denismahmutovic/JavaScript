@@ -180,69 +180,94 @@
 
 
 
-const reviews = [
-   {
-      id:1,
-      name: "marina",
-      job: "novinar",
-      img : "https://html.com/wp-content/uploads/flamingo.webp",
-      Text: "dnsL"
-   },
-   {
-      id:2,
-      name: "sara",
-      job: "matemarcar",
-      img : "https://res.cloudinary.com/demo/image/upload/if_ar_gt_3:4_and_w_gt_300_and_h_gt_200,c_crop,w_300,h_200/sample.jpg",
-      Text: "dnsL" 
-   } 
+// const reviews = [
+//    {
+//       id:1,
+//       name: "marina",
+//       job: "novinar",
+//       img : "https://html.com/wp-content/uploads/flamingo.webp",
+//       Text: "dnsL"
+//    },
+//    {
+//       id:2,
+//       name: "sara",
+//       job: "matemarcar",
+//       img : "https://res.cloudinary.com/demo/image/upload/if_ar_gt_3:4_and_w_gt_300_and_h_gt_200,c_crop,w_300,h_200/sample.jpg",
+//       Text: "dnsL" 
+//    } 
 
    
       
-];
-const img = document.getElementById("person-img");
-const author = document.getElementById("author");
+// ];
+// const img = document.getElementById("person-img");
+// const author = document.getElementById("author");
 
 
-const job = document.getElementById("job");
-const info = document.getElementById("info");
-const prevBtn = document.querySelector(".prev-btn");
-const next = document.querySelector(".next-btn");
-const randomBtn = document.querySelector(".random-btn");
+// const job = document.getElementById("job");
+// const info = document.getElementById("info");
+// const prevBtn = document.querySelector(".prev-btn");
+// const next = document.querySelector(".next-btn");
+// const randomBtn = document.querySelector(".random-btn");
 
-let = currentItem = 0;
+// let = currentItem = 0;
 
-   window.addEventListener("DOMContentLoaded", 
-   function () {
-   const item = reviews[currentItem];
-   img.src = item.img;
-   author.textContent = item.name;
-   job.textContent = item.job;
-   info.textContent = item.Text;
+//    window.addEventListener("DOMContentLoaded", 
+//    function () {
+//    const item = reviews[currentItem];
+//    img.src = item.img;
+//    author.textContent = item.name;
+//    job.textContent = item.job;
+//    info.textContent = item.Text;
 
-});
+// });
 
 
-      function showPerson (person){
-         const item = reviews [person];
-         img.src = item.img;
-         author.textContent = item.name;
-         job. textContent = item.job;
-         info.textContent = item.Text;
+//       function showPerson (person){
+//          const item = reviews [person];
+//          img.src = item.img;
+//          author.textContent = item.name;
+//          job. textContent = item.job;
+//          info.textContent = item.Text;
 
-      }
-      nextBtn.addEventListener("click",function(){
-         currentItem++;
-         if(currentItem > reviews.length - 1){
-            currentItem = 0;
+//       }
+//       nextBtn.addEventListener("click",function(){
+//          currentItem++;
+//          if(currentItem > reviews.length - 1){
+//             currentItem = 0;
 
-         }
+//          }
       
-      showPerson(currentItem);
-      });
+//       showPerson(currentItem);
+//       });
 
-      var mesec = 10 * 12;
-var rata = nekretnine.stan / mesec;
-rata = rata.toFixed(2);
-console.log(mesec + "mesec")
-console.log (rata + "eura")
-console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
+//       var mesec = 10 * 12;
+// var rata = nekretnine.stan / mesec;
+// rata = rata.toFixed(2);
+// console.log(mesec + "mesec")
+// console.log (rata + "eura")
+// console.log(`mesecna rada za stan iznosi ${rata} na 10 godina` )
+
+
+// function ucitaj(){
+//    var nekiText =document.querySelector('#demo');
+
+//    let a = 40;
+//    let b =10;
+//    let c = a *b;
+
+//    nekiText.innerHTML=c;
+   
+
+// }
+// window.addEventListener('load', ucitaj);
+
+
+function proba (){
+   var text = document.querySelector("#demo")
+   let a = 60;
+   let b = 60;
+   let c = a+b;
+   text.innerHTML = c
+
+}
+window.addEventListener ("load", proba)
