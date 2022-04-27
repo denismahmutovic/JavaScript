@@ -293,3 +293,16 @@ function init (){
    b.addEventListener("change", izracunaj)
 }
 window.addEventListener("load", init)
+
+
+function izracunaj(){
+   let a = document.querySelector("#input3")
+   let b = document.querySelector("#input4")
+   let brB = Number (a.value)
+   let brC = Number (b. value);
+   let c = brB * brC ;
+   document.querySelector("#rez").innerHTML = c;
+}
+function init (){
+   
+}
