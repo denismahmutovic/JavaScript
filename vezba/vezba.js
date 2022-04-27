@@ -304,5 +304,9 @@ function izracunaj(){
    document.querySelector("#rez").innerHTML = c;
 }
 function init (){
-   
+   let a = document.querySelector("#input1")
+   let b = document.querySelector("#input2")
+   a.addEventListener("change",izracunaj )
+   b.addEventListener("chagne", izracunaj)
 }
+window.addEventListener("load", init)
