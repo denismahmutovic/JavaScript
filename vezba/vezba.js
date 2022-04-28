@@ -314,35 +314,15 @@
 
 
 
-function dodajIme(){
-   let ime = document.querySelector('#ime').value;
-   
-   let template = 
-               `<div>
-                   <section>
-                       <h2>${ime}</h2>
-                   </section>
-                   <p>ovo su podaci o osobi ${ime}</p>
-               </div>`
 
-document.querySelector('#imena').innerHTML += template;
-}
-
-function init(){
-   let btn =document.querySelector('#dodaj-ime');
-   document.addEventListener('click', dodajIme);
-
-
-}
-window.addEventListener('load', init)
 
 function dodajIme (){
-   let ime = document.querySelector("#ime")
+   let ime = document.querySelector("#ime").value
    let template = `
                   <div>
                   <section> 
                   <h2>${ime}</h2>
-                  <p>podaci o osobi${ime}</p>
+                  <p>podaci o osobi ${ime}</p>
                   </div>`
  document.querySelector('#imena').innerHTML += template;                 
 }
@@ -351,3 +331,4 @@ function init (){
    document.addEventListener("click", dodajIme);
 }
 window.addEventListener ("load", init)
+
