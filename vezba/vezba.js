@@ -277,36 +277,77 @@
 
 
 
-function izracunaj (){
-   let a = document.querySelector("#input1")
-   let b = document.querySelector("#input2")
-   let brA = Number (a.value)
-   let brB = Number (b.value)
-   let c = brA + brB;
-   document.querySelector("#rez").innerText= c;
+// function izracunaj (){
+//    let a = document.querySelector("#input1")
+//    let b = document.querySelector("#input2")
+//    let brA = Number (a.value)
+//    let brB = Number (b.value)
+//    let c = brA + brB;
+//    document.querySelector("#rez").innerText= c;
+// }
+
+// function init (){
+//    let a = document.querySelector("#input1")
+//    let b =document.querySelector("#input2")
+//    a.addEventListener("change", izracunaj)
+//    b.addEventListener("change", izracunaj)
+// }
+// window.addEventListener("load", init)
+
+
+// function izdracinaj (){
+// let a = document.querySelector("#number3")
+// let b = document.querySelector("#number4")
+// let brA = Number (a.value);
+// let brB = Number (b.value);
+// let c = brA * brB ;
+// document.querySelector("#rezz").innerHTML = c;
+// }
+// function init (){
+//    let a = document.querySelector("#number3");
+//    let b = document.querySelector("#number4");
+//    a.addEventListener ("change", izdracinaj)
+//    b.addEventListener("change", izdracinaj)
+// }
+// window.addEventListener("load", init)
+
+
+
+
+function dodajIme(){
+   let ime = document.querySelector('#ime').value;
+   
+   let template = 
+               `<div>
+                   <section>
+                       <h2>${ime}</h2>
+                   </section>
+                   <p>ovo su podaci o osobi ${ime}</p>
+               </div>`
+
+document.querySelector('#imena').innerHTML += template;
 }
 
+function init(){
+   let btn =document.querySelector('#dodaj-ime');
+   document.addEventListener('click', dodajIme);
+
+
+}
+window.addEventListener('load', init)
+
+function dodajIme (){
+   let ime = document.querySelector("#ime")
+   let template = `
+                  <div>
+                  <section> 
+                  <h2>${ime}</h2>
+                  <p>podaci o osobi${ime}</p>
+                  </div>`
+ document.querySelector('#imena').innerHTML += template;                 
+}
 function init (){
-   let a = document.querySelector("#input1")
-   let b =document.querySelector("#input2")
-   a.addEventListener("change", izracunaj)
-   b.addEventListener("change", izracunaj)
+   let btn = document.querySelector("#dodaj-ime");
+   document.addEventListener("click", dodajIme);
 }
-window.addEventListener("load", init)
-
-
-function izracunaj(){
-   let a = document.querySelector("#input3")
-   let b = document.querySelector("#input4")
-   let brB = Number (a.value)
-   let brC = Number (b. value);
-   let c = brB * brC ;
-   document.querySelector("#rez").innerHTML = c;
-}
-function init (){
-   let a = document.querySelector("#input1")
-   let b = document.querySelector("#input2")
-   a.addEventListener("change",izracunaj )
-   b.addEventListener("chagne", izracunaj)
-}
-window.addEventListener("load", init)
+window.addEventListener ("load", init)
