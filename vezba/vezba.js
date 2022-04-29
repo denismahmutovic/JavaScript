@@ -316,19 +316,40 @@
 
 
 
-function dodajIme (){
-   let ime = document.querySelector("#ime").value
-   let template = `
-                  <div>
-                  <section> 
-                  <h2>${ime}</h2>
-                  <p>podaci o osobi ${ime}</p>
-                  </div>`
- document.querySelector('#imena').innerHTML += template;                 
-}
-function init (){
-   let btn = document.querySelector("#dodaj-ime");
-   document.addEventListener("click", dodajIme);
-}
-window.addEventListener ("load", init)
+// function dodajIme (){
+//    let ime = document.querySelector("#ime").value
+//    let template = `
+//                   <div>
+//                   <section> 
+//                   <h2>${ime}</h2>
+//                   <p>podaci o osobi ${ime}</p>
+//                   </div>`
+//  document.querySelector('#imena').innerHTML += template;                 
+// }
+// function init (){
+//    let btn = document.querySelector("#dodaj-ime");
+//    document.addEventListener("click", dodajIme);
+// }
+// window.addEventListener ("load", init)
 
+
+
+
+
+function vezba(){
+    let e =document.querySelector('#pass');
+    e.addEventListener('keyup', addName)
+}
+
+function addName(){
+    let e = document.querySelector('#pass');
+    let sifra = e.value;
+    let message = '';
+
+    if(sifra.length < 5 || sifra.length >10){
+        message ='passwor is univailable';
+    }
+        let mes = document.querySelector('#message');
+        mes.innerHTML=message;
+}   
+window.addEventListener('load', vezba);
