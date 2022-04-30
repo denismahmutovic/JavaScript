@@ -355,11 +355,22 @@
 // window.addEventListener('load', vezba);
 
 
-const numbers = [45, 4, 9, 16, 25];
+const numbers = [45, 4, 9, 16, 25, 3];
 
-let txt = "";
+let txt = "broj ";
+
 numbers.forEach(myFunction);
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("demo").innerHTML = txt ;
 
 function myFunction(value, index, array) {
   txt += value + "<br>"; }
+
+  
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2 + "<br>";
+}
