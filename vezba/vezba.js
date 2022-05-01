@@ -374,3 +374,7 @@ document.getElementById("demo").innerHTML = numbers2;
 function myFunction(value, index, array) {
   return value * 2 + "<br>";
 }
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 101);
+
+
