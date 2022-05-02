@@ -380,3 +380,12 @@ Math.floor(Math.random() * 101);
 
 let x = 0;
 document.getElementById("demo").innerHTML = Boolean(x);
+
+
+var automobili = ["audi", "Bmw", "mercedes", "porshe"];
+for (var automobil of automobili){
+    console.log (automobil) 
+}
+
+var automobili ={
+    audi:['7000',
