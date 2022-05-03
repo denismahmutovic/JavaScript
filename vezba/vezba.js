@@ -400,5 +400,18 @@ for (const x of letters) {
 document.getElementById("demo").innerHTML = text;
 
 
+
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+
+
   
       
