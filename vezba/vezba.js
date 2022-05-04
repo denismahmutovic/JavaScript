@@ -336,82 +336,99 @@
 
 
 
-// function vezba(){
-//     let e =document.querySelector('#pass');
-//     e.addEventListener('keyup', addName)
-// }
+// // function vezba(){
+// //     let e =document.querySelector('#pass');
+// //     e.addEventListener('keyup', addName)
+// // }
 
-// function addName(){
-//     let e = document.querySelector('#pass');
-//     let sifra = e.value;
-//     let message = '';
+// // function addName(){
+// //     let e = document.querySelector('#pass');
+// //     let sifra = e.value;
+// //     let message = '';
 
-//     if(sifra.length < 5 || sifra.length >10){
-//         message ='passwor is univailable';
-//     }
-//         let mes = document.querySelector('#message');
-//         mes.innerHTML=message;
-// }   
-// window.addEventListener('load', vezba);
-
-
-// const numbers = [45, 4, 9, 16, 25, 3];
-
-// let txt = "broj ";
-
-// numbers.forEach(myFunction);
-// document.getElementById("demo").innerHTML = txt ;
-
-// function myFunction(value, index, array) {
-//   txt += value + "<br>"; }
-
-  
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.map(myFunction);
-
-// document.getElementById("demo").innerHTML = numbers2;
-
-// function myFunction(value, index, array) {
-//   return value * 2 + "<br>";
-// }
-// document.getElementById("demo").innerHTML =
-// Math.floor(Math.random() * 101);
+// //     if(sifra.length < 5 || sifra.length >10){
+// //         message ='passwor is univailable';
+// //     }
+// //         let mes = document.querySelector('#message');
+// //         mes.innerHTML=message;
+// // }   
+// // window.addEventListener('load', vezba);
 
 
-// let x = 0;
-// document.getElementById("demo").innerHTML = Boolean(x);
+// // const numbers = [45, 4, 9, 16, 25, 3];
 
+// // let txt = "broj ";
 
-// var automobili = ["audi", "Bmw", "mercedes", "porshe"];
-// for (var automobil of automobili){
-//     console.log (automobil) 
-// }
+// // numbers.forEach(myFunction);
+// // document.getElementById("demo").innerHTML = txt ;
 
-// var automobili ={
-//     audi:['7000']
-//     const letters = ["a","b","c"];
-
-// List all Elements
-let text = "";
-for (const x of letters) {
-  text += x + "<br>";
-}
-
-document.getElementById("demo").innerHTML = text;
-
-
-
-const hour = new Date().getHours(); 
-let greeting;
-
-if (hour < 18) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-
-document.getElementById("demo").innerHTML = greeting;
-
+// // function myFunction(value, index, array) {
+// //   txt += value + "<br>"; }
 
   
+// // const numbers1 = [45, 4, 9, 16, 25];
+// // const numbers2 = numbers1.map(myFunction);
+
+// // document.getElementById("demo").innerHTML = numbers2;
+
+// // function myFunction(value, index, array) {
+// //   return value * 2 + "<br>";
+// // }
+// // document.getElementById("demo").innerHTML =
+// // Math.floor(Math.random() * 101);
+
+
+// // let x = 0;
+// // document.getElementById("demo").innerHTML = Boolean(x);
+
+
+// // var automobili = ["audi", "Bmw", "mercedes", "porshe"];
+// // for (var automobil of automobili){
+// //     console.log (automobil) 
+// // }
+
+// // var automobili ={
+// //     audi:['7000']
+// //     const letters = ["a","b","c"];
+
+// // List all Elements
+// let text = "";
+// for (const x of letters) {
+//   text += x + "<br>";
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+
+
+// const hour = new Date().getHours(); 
+// let greeting;
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+// document.getElementById("demo").innerHTML = greeting;
+
+
+
+// const klikni_me = () => {
+//   let a = 5;
+//   let b = 10
+//   console.log(a +  b)
+// }
+// klikni_me()
+
+const klikni = (dugme) => {
+  console.log (dugme.innerText);
+}
+let btns = document.querySelectorAll("button");
+btns.forEach(function (btn) {
+btn.addEventListener("click", function() {
+  console.log("kliknuo");
+});
+});
+
       
