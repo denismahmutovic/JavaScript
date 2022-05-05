@@ -89,17 +89,41 @@
 //     }
 // }
                 //  dozivamo && vise uslova
-var ime = "denis"
-var prezime = 'mahmutovic'
-// if ( (ime == 'denis') && (prezime == "mahmutovic")   ){
-//     document.write("doneee");
+// var ime = "denis"
+// var prezime = 'mahmutovic'
+//  if ( (ime == 'denis') && (prezime == "mahmutovic")   ){
+//           document.write("doneee");
 
 // }
 
                     // dozivamo samo jedan uslov ||
-if ( (ime === "denis") || (prezime == "mahmutovic") ) {
-    document.write("donee2")
-}
+//  
+
+// let broj = 24
+// let godine = 26
+// if(broj => godine){
+//     document.write("ovo je tacno")
+// }
 
 
 
+// if (2==26){
+//     document.write("ovo je tacno")
+// } else{
+//     document.write("ovo nije tacno")
+// }
+
+
+var ime="Ivana";
+switch (ime){
+    case "Marija":
+        document.write ("CAo Marija");
+        break;
+    case "Milica":
+        document.write ("Cao Milice");
+        break;
+    case "Sanja":
+        document.write ("Cao Sanja");
+        break;
+    default:
+        document.write ("Cao Cao...");}
