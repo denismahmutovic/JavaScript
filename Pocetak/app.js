@@ -113,17 +113,29 @@
 //     document.write("ovo nije tacno")
 // }
 
+        //Switch uslovi
+// var ime="Ivana";
+// switch (ime){
+//     case "Marija":
+//         document.write ("CAo Marija");
+//         break;
+//     case "Milica":
+//         document.write ("Cao Milice");
+//         break;
+//     case "Sanja":
+//         document.write ("Cao Sanja");
+//         break;
+//     default:    // ako nema vise slucajeva onda se koristi default
+//         document.write ("Cao Cao...");}
 
-var ime="Ivana";
-switch (ime){
-    case "Marija":
-        document.write ("CAo Marija");
-        break;
-    case "Milica":
-        document.write ("Cao Milice");
-        break;
-    case "Sanja":
-        document.write ("Cao Sanja");
-        break;
-    default:
-        document.write ("Cao Cao...");}
+  // for 
+
+// for (x= 0; x < 50; x++){
+//     document.write("vezbaaa  <br>" )
+// }
+
+let i = 1
+while (i < 10){
+    document.write( i+ " IT <br>")
+    i++
+}
