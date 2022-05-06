@@ -134,8 +134,17 @@
 //     document.write("vezbaaa  <br>" )
 // }
 
-let i = 1
-while (i < 10){
-    document.write( i+ " IT <br>")
-    i++
-}
+// let i = 1
+// while (i < 10){
+//     document.write( i+ " IT <br>")
+//     i++
+// }
+
+
+// do-while petlje
+
+let x = 65
+do{
+  document.write(x+ "pozz <br>");   //
+  x++
+}while(x<=20);
