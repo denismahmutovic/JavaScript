@@ -18,11 +18,11 @@
 
 //  function sa vise parametra:
 
-// function fun (jedan, dva, tri){
-//     document.write (jedan + " je bolja od " + dva + tri );
+function fun (jedan, dva, tri){
+    document.write (jedan + " je bolja od " + dva + tri );
     
-// }
-// fun ("Fifa", "pesa", " i od f1")
+}
+fun ("Fifa", "pesa", " i od f1")
 
                     // [povratne infromacije]
 
