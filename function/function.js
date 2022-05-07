@@ -22,7 +22,7 @@ function fun (jedan, dva, tri){
     document.write (jedan + " je bolja od " + dva + tri );
     
 }
-fun ("Fifa", "pesa", " i od f1")
+fun ("Fifa", "pesa", " i od f1 ")
 
                     // [povratne infromacije]
 
@@ -69,15 +69,34 @@ fun ("Fifa", "pesa", " i od f1")
 //   document.write(ime);
 
         // lokalna
-  function fun (){
-    var ime = "denis";
-      document.write (ime);
-  }
-  fun();
-  document.write(ime);
+  // function fun (){
+  //   var ime = "denis";
+  //     document.write (ime);
+  // }
+  // fun();
+  // document.write(ime);
 
 
+  // function denis(){
+  //   alert("welcome")
+  // }
 
+
+function demo (z){
+  
+}
+demo("welcome");
+
+function denis (dns){
+  
+}
+denis("probaa ");
+
+function fn (x, y, d){
+ document.write(x+y+d)
+
+}
+fn("petak ", " subota", " nedelja")
 
 
 
