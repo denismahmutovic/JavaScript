@@ -96,7 +96,23 @@ function fn (x, y, d){
  document.write(x+y+d)
 
 }
-fn("petak ", " subota", " nedelja")
+fn("petak ", " subota", " nedelja   ")
+
+function rez (r,t,u){
+  console.log(r+t+u)
+}
+rez(10,10,10);
+
+// retutn funkcija
+
+function return_test(a,b){
+  var c = a+b
+  return c;
+
+}
+document.write(return_test(10,10))
+
+
 
 
 
