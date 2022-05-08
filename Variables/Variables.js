@@ -66,7 +66,29 @@
 // var y = x * 3;
 // document.write(y)
 
-var x = 150 + " proba";
-document.write(x)
-var y = "test" + 10 / 2;
-document.write(y);
+// var x = 150 + " proba";
+// document.write(x)
+// var y = "test" + 10 / 2;
+// document.write(y);
+
+
+
+// let a = 65
+// let b = "5"
+// b = parseInt(b)
+// let rez = a+b
+// console.log(rez)
+
+//  Z A M E N A  M E S T A  V A R I A B L I 
+
+let a = 100
+let b = 200
+let c;
+c= a
+a =b
+b = c
+
+console.log("prvi broj  " + a  )
+console.log("drugi broj je 100 "+b)
+
+
