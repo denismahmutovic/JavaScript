@@ -113,22 +113,51 @@ fun ("Fifa", "pesa", " i od f1 ")
 // document.write(return_test(10,10))
 
   //  P O Z I V A N J E   V I S E  F U N K C I J A //
-function prvaFunkcija (){
-  document.write("one")
-}
-function sredina(){
-  document.write("<hr>")
-}
-function drugaFunkcija (){
-  document.write("two")
-}
-function poziva (){
-  prvaFunkcija()
-  sredina()
-  drugaFunkcija()
-}
-poziva();
+// function prvaFunkcija (){
+//   document.write("one")
+// }
+// function sredina(){
+//   document.write("<hr>")
+// }
+// function drugaFunkcija (){
+//   document.write("two")
+// }
+// function poziva (){
+//   prvaFunkcija()
+//   sredina()
+//   drugaFunkcija()
+// }
+// poziva();
 
+
+// E N D L E S S   L O O P //
+
+// function prva (){
+//   document.write("work--------");
+//  druga()
+// }
+// function druga(){
+//   document.write("****school " );
+//   prva()
+// }
+// function treca (){
+//   prva()
+//   druga()
+// }
+// treca()
+
+ var proba = 456;
+function vezba (){
+  var proba = "proba1"
+  var proba = "work"
+  document.write(proba);
+}
+
+function druga (){
+  document.write(proba)
+}
+vezba()
+druga()
 
 
 

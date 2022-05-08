@@ -30,3 +30,24 @@ objekat.ime + " " + objekat.prezime + " " + objekat.godine + " " + objekat.bojeO
 
 // console.log (x==z);
 // console.log (x===z);
+
+// var broj = 10
+// var broj = broj + 10
+// var broj = broj +50
+// document.write(broj)
+
+// var broj = 10
+// broj++
+// broj ++
+// broj --
+// broj --
+// document.write(broj)
+
+var broj = 10
+broj += 10
+broj -= 20
+broj += 3
+broj *= 9
+broj %= 27
+
+document.write(broj)
