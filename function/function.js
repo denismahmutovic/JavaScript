@@ -82,36 +82,52 @@ fun ("Fifa", "pesa", " i od f1 ")
   // }
 
 
-function demo (z){
+// function demo (z){
   
-}
-demo("welcome");
+// }
+// demo("welcome");
 
-function denis (dns){
+// function denis (dns){
   
+// }
+// denis("probaa ");
+
+// function fn (x, y, d){
+//  document.write(x+y+d)
+
+// }
+// fn("petak ", " subota", " nedelja   ")
+
+// function rez (r,t,u){
+//   console.log(r+t+u)
+// }
+// rez(10,10,10);
+
+// // retutn funkcija
+
+// function return_test(a,b){
+//   var c = a+b
+//   return c;
+
+// }
+// document.write(return_test(10,10))
+
+  //  P O Z I V A N J E   V I S E  F U N K C I J A //
+function prvaFunkcija (){
+  document.write("one")
 }
-denis("probaa ");
-
-function fn (x, y, d){
- document.write(x+y+d)
-
+function sredina(){
+  document.write("<hr>")
 }
-fn("petak ", " subota", " nedelja   ")
-
-function rez (r,t,u){
-  console.log(r+t+u)
+function drugaFunkcija (){
+  document.write("two")
 }
-rez(10,10,10);
-
-// retutn funkcija
-
-function return_test(a,b){
-  var c = a+b
-  return c;
-
+function poziva (){
+  prvaFunkcija()
+  sredina()
+  drugaFunkcija()
 }
-document.write(return_test(10,10))
-
+poziva();
 
 
 
