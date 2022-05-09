@@ -55,7 +55,7 @@
 
 // const a = 4
 // const b = 5;
-// console.log(a&&b)   // vraca zadju vredenost ako si uslovi tacni
+// console.log(a &&b)   // vraca zadju vredenost ako si uslovi tacni
 
 // const a = 4
 // const b =2
@@ -63,13 +63,62 @@
 // console.log(a&&b&&c) //and operator
 
 
-const a = 4;
-const b = false      //prvi tacan koi naleti :D
-console.log(a||b)
-console.log(!5)
-console.log(!5 ||!false)
+// const a = 4;
+// const b = false      //prvi tacan koi naleti :D
+// console.log(a||b)
+// console.log(!5)
+// console.log(!5 ||!false)
 
 
 //fizz buzz = domaci//
 
+// let prvi_broj =  9
+// let = drugi_broj = 10
 
+
+// if (prvi_broj > drugi_broj){
+//     console.log("tacno")
+// } else if ( drugi_broj > prvi_broj){
+//     console.log("Ne tacno")
+// } else {
+//     console.log("ne znam")
+// }
+
+// let a = 17
+// let b = 19
+// if (a < b){
+//     console.log("tacno")
+// } else if (b > a){
+//     console.log("ne tacno")
+// } else console.log("vredsnost nije definasa")
+
+
+// const c = 4
+// const d = 5;
+// console.log(c &&d)
+
+// let a = "ponedeljak"
+// let b = "utorak"
+// let c = 25
+// console.log(a&&b&&c)
+
+// // console.log(10===1)
+// console.log(6!== 5)
+
+// let name  = "denis"
+// let godine = 25
+// let meseci = godine * 12
+// console.log(meseci) 
+
+// const ime = prompt ("Unesi vrednost")
+// const godine = prompt ("Unesi tvoje godine");
+// alert ("ziveo si " + godine * 12 + " meseci")
+
+
+const age = 17
+if (age >=18){
+    console.log("punoletans si")
+    } else if (age < 18){
+        console.log("nisi punoletan")
+
+    } else("done")
