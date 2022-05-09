@@ -81,14 +81,15 @@
 
 //  Z A M E N A  M E S T A  V A R I A B L I 
 
-let a = 100
-let b = 200
-let c;
-c= a
-a =b
-b = c
+// let a = 100
+// let b = 200
+// let c;
+// c= a
+// a =b
+// b = c
 
-console.log("prvi broj  " + a  )
-console.log("drugi broj je 100 "+b)
+// console.log("prvi broj  " + a  )
+// console.log("drugi broj je 100 "+b)
+
 
 
