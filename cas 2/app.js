@@ -171,21 +171,46 @@
 
 
 
-let mesec = 5
-switch (mesec){
-    case 1:
-        console.log("Januar")
-        break;
-        case 2:
-         console.log("Februar");
-            break
-          case 3:
-         console.log("Mart")
-              break
-            case 4:
-            console.log("April")
-             break;
-             default:{
-                 console.log("nema vise uslova")
-             }
-} 
+// let mesec = 1
+// switch (mesec){
+//     case 1:
+//         console.log("Januar")
+//         break;
+//         case 2:
+//          console.log("Februar");
+//             break
+//           case 3:
+//          console.log("Mart")
+//               break
+//             case 4:
+//             console.log("April")
+//              break;
+//              default:{
+//                  console.log("nema vise uslova")
+//              }
+// } 
+
+
+// let novac = 25
+// let vrednost = 10
+// let brojac = 0
+// let rezultat = 0
+// while (brojac < 25){
+//     rezultat++;
+//     // console.log(rezultat)
+//     brojac ++
+
+// }
+// console.log(rezultat * vrednost)
+
+
+let novcanice =[10,5 ,20 ,50,5,10,100,20,50]
+let = broj_novcanica = novcanice.length;
+let = brojac = 0
+while(brojac < broj_novcanica){
+    console.log("-----------")
+    console.log("uslov prosao")
+    console.log(`novcanica za pozici niza [${brojac}]: ${novcanice[brojac]}`);
+   
+    brojac ++
+}
