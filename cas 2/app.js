@@ -70,8 +70,8 @@
 // console.log(!5 ||!false)
 
 
-//fizz buzz = domaci//
-
+                                //fizz buzz = domaci//
+//------------------------------------------------------------------------------------------//
 // let prvi_broj =  9
 // let = drugi_broj = 10
 
@@ -115,10 +115,37 @@
 // alert ("ziveo si " + godine * 12 + " meseci")
 
 
-const age = 17
-if (age >=18){
-    console.log("punoletans si")
-    } else if (age < 18){
-        console.log("nisi punoletan")
+// const age = 17
+// if (age >=18){
+//     console.log("punoletans si")
+//     } else if (age < 18){
+//         console.log("nisi punoletan")
 
-    } else("done")
+//     } else("done")
+
+
+// const a = 4;
+// const b = false
+// console.log(a||b)
+// console.log(!b)  
+
+// let godine = 12
+// godine +=8
+// console.log(godine)
+
+
+let ime = "Denis"
+let godine = 26
+let grad = "Novi Pazar"
+let recenica = `ja sam ${ime} imam ${godine} godina zivim u ${grad}`;
+console.log(recenica)
+
+
+let prviBroj = 10
+let drugiBroj = 5
+let treciBroj = 7
+let cetvriBroj = 8
+console.log(prviBroj > drugiBroj)
+console.log(treciBroj > cetvriBroj)
+console.log((prviBroj > drugiBroj) || (treciBroj > cetvriBroj ))
+
