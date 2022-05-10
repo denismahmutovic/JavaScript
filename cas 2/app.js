@@ -134,12 +134,58 @@
 // console.log(godine)
 
 
-let ime = "Denis"
-let godine = 26
-let grad = "Novi Pazar"
-let recenica = `ja sam ${ime} imam ${godine} godina zivim u ${grad}`;
-console.log(recenica)
+// let ime = "Denis"
+// let godine = 26
+// let grad = "Novi Pazar"
+// let recenica = `ja sam ${ime} imam ${godine} godina zivim u ${grad}`;
+// console.log(recenica)
+
+// let prviBroj = 10
+// let drugiBroj = 5
+// let treciBroj = 7
+// let cetvriBroj = 8
+// console.log(prviBroj > drugiBroj)
+// console.log(treciBroj > cetvriBroj)
+// console.log((prviBroj > drugiBroj) && (treciBroj > cetvriBroj ))
+
+// let prviBroj = 11
+// let drugiBroj = 10
+// if (prviBroj < drugiBroj){
+//     console.log("prvi broj je manji od drugog")
+// } else if (prviBroj > drugiBroj){
+//     console.log("drugi broj je veci od prvog")
+// }
+
+// let vreme = 19
+// if (vreme < 10){
+//     console.log("dobro jutro")
+// } else if (vreme < 20){
+//     console.log("dobar  dan!")
+// } else{
+//     console.log("dobro vece")
+// }
 
 
 
 
+
+
+
+let mesec = 5
+switch (mesec){
+    case 1:
+        console.log("Januar")
+        break;
+        case 2:
+         console.log("Februar");
+            break
+          case 3:
+         console.log("Mart")
+              break
+            case 4:
+            console.log("April")
+             break;
+             default:{
+                 console.log("nema vise uslova")
+             }
+} 
