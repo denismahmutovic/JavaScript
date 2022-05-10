@@ -141,11 +141,5 @@ let recenica = `ja sam ${ime} imam ${godine} godina zivim u ${grad}`;
 console.log(recenica)
 
 
-let prviBroj = 10
-let drugiBroj = 5
-let treciBroj = 7
-let cetvriBroj = 8
-console.log(prviBroj > drugiBroj)
-console.log(treciBroj > cetvriBroj)
-console.log((prviBroj > drugiBroj) || (treciBroj > cetvriBroj ))
+
 
