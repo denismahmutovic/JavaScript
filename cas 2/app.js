@@ -203,14 +203,54 @@
 // }
 // console.log(rezultat * vrednost)
 
-
-let novcanice =[10,5 ,20 ,50,5,10,100,20,50]
-let = broj_novcanica = novcanice.length;
-let = brojac = 0
-while(brojac < broj_novcanica){
-    console.log("-----------")
-    console.log("uslov prosao")
-    console.log(`novcanica za pozici niza [${brojac}]: ${novcanice[brojac]}`);
+  // P E T LJ E
+// let novcanice =[10,5 ,20 ,50,5,10,100,20,50]
+// let = broj_novcanica = novcanice.length;
+// let = brojac = 0
+// while(brojac < broj_novcanica){
+//     console.log("-----------")
+//     console.log("uslov prosao")
+//     console.log(`novcanica za pozici niza [${brojac}]: ${novcanice[brojac]}`);
    
-    brojac ++
-}
+//     brojac ++
+// }
+
+// let novcanice =[10,5 ,20 ,50,5,10,100,20,50]
+// let = broj_novcanica = novcanice.length;
+// // let = brojac = 0
+// let ukupno_novca = 0
+
+// for (let brojac = 0; brojac < broj_novcanica; brojac ++){
+//     console.log(novcanice[brojac])
+//    ukupno_novca+= novcanice[brojac]  
+// }
+// console.log("### KRAJ PERLJE ###")
+// console.log(ukupno_novca)
+
+
+// let novcanice =[10,5 ,20 ,50,5,10,100,20,50]
+// for(let novcanica of novcanice){
+//     console.log(novcanica)
+
+// }
+
+
+// let automobili = ['audi', "bmw", "porshe", "mercedes"];
+// for(let automobil of automobili){
+//     console.log(automobil)
+// }
+
+// let automobili = ["audi", "bmw", "porshe", 'mercedes'];
+
+// automobili.forEach (function(automobil){
+//     console.log(automobil)
+
+// })
+
+
+let automobili = {
+    prvi_auto: "audi",
+    drugi_auto: "bmw",
+    treci_auto: "porshe"
+};
+console.log(automobili)
