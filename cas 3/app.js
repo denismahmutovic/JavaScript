@@ -12,17 +12,30 @@
 // }
 
 
-let n = 20
-while(n === 20){
-    console.log("unutar While petlje")
-    break;
+// let suma = 0;
+// for (i=3; i<=5; i++){
+//     console.log("brojac", i);
+//     suma = suma + i;
+//     console.log("suma", suma)
+// }
+// console.log(suma)
+
+let rez = 0
+for (i= 3; i<=5; i++){
+    console.log("brojac", i)
+    rez = rez +i
+    console.log("rez", rez)
 
 }
-n= 21;
+console.log(rez)
 
-fizzbuzz challange
 
-0 - 100
+
+
+// fizzbuzz challange
+
+// 0 - 100
 // 3- fizz
 // 5- buzz
 //3,5 fizzbuzz
+
