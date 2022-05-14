@@ -55,7 +55,15 @@ for (let i = 0; i < brojac; i ++){
 console.log(prazna)
 
 
+let ime = "danas je suta"
+let vrednost = 0;
 
+for(let i = 0; i < ime.length;i++){
+    if(ime[i] === " " ){
+        vrednost +=1
+    }
+}
+console.log(vrednost)
 
 
 
