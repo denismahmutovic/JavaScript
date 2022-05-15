@@ -38,44 +38,48 @@
 
 
 
-let recenica = "danas je subota"
-let prazna = ""
-let brojac = recenica.length
+// let recenica = "danas je subota"
+// let prazna = ""
+// let brojac = recenica.length
 
-for (let i = 0; i < brojac; i ++){
+// for (let i = 0; i < brojac; i ++){
 
-    if(i === brojac -1){
-        prazna+= recenica[i].toUpperCase();
-    } else if(recenica[i+1] === " " ){
-        prazna+= recenica[i].toUpperCase();
-    } else{
-        prazna += recenica [i]
+//     if(i === brojac -1){
+//         prazna+= recenica[i].toUpperCase();
+//     } else if(recenica[i+1] === " " ){
+//         prazna+= recenica[i].toUpperCase();
+//     } else{
+//         prazna += recenica [i]
+//     }
+// }
+// console.log(prazna)
+
+
+// let ime = "danas je suta"
+// let vrednost = 0;
+
+// for(let i = 0; i < ime.length;i++){
+//     if(ime[i] === " " ){
+//         vrednost +=1
+//     }
+// }
+// console.log(vrednost)
+
+
+
+
+
+
+
+let recenica ="danas ne nedelja"
+let razmak = 0
+
+for (let i = 0; i < recenica.length; i++ ){
+    if(recenica[i] === " "){
+        razmak+=1
     }
 }
-console.log(prazna)
-
-
-let ime = "danas je suta"
-let vrednost = 0;
-
-for(let i = 0; i < ime.length;i++){
-    if(ime[i] === " " ){
-        vrednost +=1
-    }
-}
-console.log(vrednost)
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(razmak)
 
 
 

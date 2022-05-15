@@ -421,14 +421,52 @@
 // }
 // klikni_me()
 
-const klikni = (dugme) => {
-  console.log (dugme.innerText);
-}
-let btns = document.querySelectorAll("button");
-btns.forEach(function (btn) {
-btn.addEventListener("click", function() {
-  console.log("kliknuo");
-});
-});
+// const klikni = (dugme) => {
+//   console.log (dugme.innerText);
+// }
+// let btns = document.querySelectorAll("button");
+// btns.forEach(function (btn) {
+// btn.addEventListener("click", function() {
+//   console.log("kliknuo");
+// });
+// });
 
+
+// var ime="Sanja";
+// switch (ime){
+//     case "Marija":
+//         document.write ("CAo Marija");
+//         break;
+//     case "Milica":
+//         document.write ("Cao Milice");
+//         break;
+//     case "Sanja":
+//         document.write ("Cao Sanja");
+//         break;
+//     default:    // ako nema vise slucajeva onda se koristi default
+//         document.write ("Cao Cao...");}
+
+
+
+
+
+
+
+
+
+
+let imena = "Dalila"
+switch(imena){
+   case "Sanja":
+          console.log("cao sanja")
+      break;
+   case "Dragana":
+         console.log("Dobro dosla Dragana")
+         break;
+   case "Dalila":
+         console.log("Hello Dalila")
+            break;
+   default:
+         console.log("zdravo svima")
+}
       
