@@ -455,18 +455,27 @@
 
 
 
-let imena = "Dalila"
-switch(imena){
-   case "Sanja":
-          console.log("cao sanja")
-      break;
-   case "Dragana":
-         console.log("Dobro dosla Dragana")
-         break;
-   case "Dalila":
-         console.log("Hello Dalila")
-            break;
-   default:
-         console.log("zdravo svima")
+// let imena = ""
+// switch(imena){
+//    case "Sanja":
+//           console.log("cao sanja")
+//       break;
+//    case "Dragana":
+//          console.log("Dobro dosla Dragana")
+//          break;
+//    case "Dalila":
+//          console.log("Hello Dalila")
+//             break;
+//    default:
+//          console.log("zdravo svima")
+// }
+
+let vreme = 9;
+if(vreme < 10){
+   console.log("Dobro jutro")
+} else if(vreme < 20){
+   console.log("dobar dan")
+} else{
+   console.log("dobro vece")
 }
       
