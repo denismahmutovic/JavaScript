@@ -496,7 +496,15 @@
 // console.log("ukupno imamo:", + ukupno + " eura.")
 
 //          D R U G I   N A  C I N 
-let automobili = ["audi", "bmw", "mercedes", "opel"]
-for(automobil of automobili){
-   console.log(automobil)
+// let automobili = ["audi", "bmw", "mercedes", "opel"]
+// for(automobil of automobili){
+//    console.log(automobil)
+// }
+
+let automobili = { 
+   audi:["5000", "2017", "q7"],
+   bmw: "6000
+   porshe:"7000",
+   mercedes:"8000"
 }
+console.log(automobili)
