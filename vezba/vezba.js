@@ -470,12 +470,33 @@
 //          console.log("zdravo svima")
 // }
 
-let vreme = 9;
-if(vreme < 10){
-   console.log("Dobro jutro")
-} else if(vreme < 20){
-   console.log("dobar dan")
-} else{
-   console.log("dobro vece")
+// let vreme = 9;
+// if(vreme < 10){
+//    console.log("Dobro jutro")
+// } else if(vreme < 20){
+//    console.log("dobar dan")
+// } else{
+//    console.log("dobro vece")
+// }
+
+
+
+
+// let novcanice = [10,5, 20,50, 5,10,100,20,50]
+// let broj_novcanica = novcanice.length;
+// let ukupno = 0
+
+
+// for (let i = 0; i < broj_novcanica; i++){
+//    console.log(novcanice[i])
+//    ukupno+= novcanice[i]
+
+// }
+// console.log("### KRAJ PETLJE ###")
+// console.log("ukupno imamo:", + ukupno + " eura.")
+
+//          D R U G I   N A  C I N 
+let automobili = ["audi", "bmw", "mercedes", "opel"]
+for(automobil of automobili){
+   console.log(automobil)
 }
-      
