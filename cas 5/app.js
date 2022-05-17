@@ -12,12 +12,14 @@
 //         }
 // }
 
-// const isSunny = true;
-// if(isSunny){
-//     console.log("ponesi naocare")
-// } else{
-//     console.log("nemoj nosit")
-// }
+const isSunny = true
+if(isSunny){
+    console.log("ponesi naocare")
+} else{
+    console.log("nemoj nosit")
+    
+}
+
 
       //skraceni oblik
 // if (isSunny)// if (isSunny === true)
@@ -26,13 +28,34 @@
 
 // TERNARY OPERATOR
 
-let godine = 19;
-let = DalijePunoletan = (godine >=18) ? true:false
-console.log( "punoletan", DalijePunoletan)
-// -------------------------------------------------------
+// let godine = 19;
+// let = DalijePunoletan = (godine >=18) ? true:false
+// console.log( "punoletan", DalijePunoletan)
+// // -------------------------------------------------------
 
-const isSunny = true;
-isSunny ? console.log("danas je suncano"): console.log("danas nije suncano")
+// const isSunny = true;
+// isSunny ? console.log("danas je suncano"): console.log("danas nije suncano")
 
 // trurhy  //falsy 
 
+// let godine = 26
+// var pivo = (godine >= 26)  ? "pivo" : "sok"
+// console.log(pivo)
+
+if (""){
+    console.log("tacna vrednost ili TRUTHY");
+} else{
+    console.log("netacna vrenost ili FALSY")   // odg FALSY
+}
+
+
+
+// let vikend = true
+// vikend ? console.log("Vikend Radan") : console.log("Vikend slobodan")
+
+let vikend = false
+if(!vikend){
+    console.log("vikend radan")
+} else{
+    console.log("vikend Neradan")
+}
