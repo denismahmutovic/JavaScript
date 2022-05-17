@@ -21,6 +21,7 @@ if(isSunny){
 }
 
 
+
       //skraceni oblik
 // if (isSunny)// if (isSunny === true)
 // if(!isSunny) // is(isSnny !== true) || if (isSunny === false)

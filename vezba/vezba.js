@@ -503,8 +503,14 @@
 
 let automobili = { 
    audi:["5000", "2017", "q7"],
-   bmw: "6000
-   porshe:"7000",
-   mercedes:"8000"
+   bmw: ["6000", "2018", "330D"],
+   porshe:["7000", "2016", "boxter"],
+   mercedes:["8000", "2019", "s400"]
 }
-console.log(automobili)
+for (auto in automobili){
+let = naziv = automobili;
+let podaci_vozilu = automobili[auto];
+console.log(`naziv, model: ${podaci_vozilu[2]},godiste: ${podaci_vozilu[1]}, cena:${podaci_vozilu[0]}`)
+}
+
+
