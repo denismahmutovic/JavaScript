@@ -9,6 +9,7 @@
 
         //index
 //  const cars = ["BMW", 4, true, null, undefined, "vW"];
+
 //  for(let i = 0; i < cars.length; i++){
 //      if(cars[i]){
 //          console.log(cars[i])
@@ -42,7 +43,7 @@ play.length = 0
 console.log(play)
 
 const studenti  = ["Amina", "sara","Hana"]
-for (let student of studenti){
+for (let student in studenti){
     console.log(student)
 }
 
@@ -60,7 +61,15 @@ for (let student of studenti){
 
 
 
+const prezimena = ["mahmutoviuc", "nokic", "mecinovic", "dzankovic"]
+let koliko = 0
 
+for(let i = 0; i < koliko; i++){
+    if(prezimena[i] === " "){
+
+        console.log(prezimena[i])
+    }
+}
 
 
 

@@ -18,11 +18,11 @@
 
 //  function sa vise parametra:
 
-function fun (jedan, dva, tri){
-    document.write (jedan + " je bolja od " + dva + tri );
+// function fun (jedan, dva, tri){
+//     document.write (jedan + " je bolja od " + dva + tri );
     
-}
-fun ("Fifa", "pesa", " i od f1 ")
+// }
+// fun ("Fifa", "pesa", " i od f1 ")
 
                     // [povratne infromacije]
 
@@ -146,18 +146,33 @@ fun ("Fifa", "pesa", " i od f1 ")
 // }
 // treca()
 
- var proba = 456;
-function vezba (){
-  var proba = "proba1"
-  var proba = "work"
-  document.write(proba);
-}
+//  var proba = 456;
+// function vezba (){
+//   var proba = "proba1"
+//   var proba = "work"
+//   document.write(proba);
+// }
 
-function druga (){
-  document.write(proba)
-}
-vezba()
-druga()
+// function druga (){
+//   document.write(proba)
+// }
+// vezba()
+// druga()
+// function denis(){
 
+//}
+function denis (dns){
+  document.write(dns)
+  document.write("<hr>")
+
+  
+}
+denis("hello")
+
+function fun (jedan, dva, tri){
+  document.write (jedan + " je bolja od " + dva + tri );
+  
+}
+fun ("Fifa", "pesa", " i od f1 ")
 
 
