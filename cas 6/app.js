@@ -61,15 +61,6 @@ for (let student in studenti){
 
 
 
-const prezimena = ["mahmutoviuc", "nokic", "mecinovic", "dzankovic"]
-let koliko = 0
-
-for(let i = 0; i < koliko; i++){
-    if(prezimena[i] === " "){
-
-        console.log(prezimena[i])
-    }
-}
 
 
 
