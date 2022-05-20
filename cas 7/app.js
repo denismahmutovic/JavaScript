@@ -10,6 +10,11 @@
 
 // }
 
+
+
+
+
+
 // function saberi (a,b){
 //     return a + b
 
@@ -19,6 +24,15 @@
 //     return inch *2.54
 // }
 // console.log(inchToCm(10))
+
+
+
+// function staza (rek){
+//     return rek*2
+// }
+// const rez = staza(800)
+// console.log(rez)
+
                                 // lokalni {
 
                                 // }
@@ -31,17 +45,44 @@
 // console.log(saberi(10,11))
 // console.log(inchToCm(10))
 
-function sabiraj(prvi,drugi,treci=false){
-    if(treci){
-        return prvi + drugi +treci;
+// function sabiraj(prvi,drugi,treci=false){
+//     if(treci){
+//         return prvi + drugi +treci;
     
-    } else{
-        prvi+drugi
-    }
-    return prvi+drugi+treci
-}
-console.log(sabiraj(2,2,10))
+//     } else{
+//         prvi+drugi
+//     }
+//     return prvi+drugi+treci
+// } 
+// console.log(sabiraj(2,2,10))
+
 
 
 // fukcija da se unese tri broja i da 
 //promnt  
+// --------------------------------home-----------------------------------
+
+const saberi = (a,b) => a+b;
+console.log(saberi(10,1))
+const rek_centar = rek => rek * 800;
+console.log(rek_centar(2) +" metara")
+
+const sopink = idea => idea * 200 +" Dinara"
+console.log(sopink(10))
+
+const ime = "denis"
+function proba(){
+    const ime = "deni";
+    console.log(ime)
+}
+proba()
+
+function sabijar (prvi,drugi,treci =false){
+    if(treci){
+        return prvi + drugi + treci;
+
+    } else{
+        return prvi + drugi
+    }
+}
+console.log(sabijar(2,2,3))
