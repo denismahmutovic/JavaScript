@@ -161,19 +161,17 @@
 // function denis(){
 
 //}
-function denis (dns){
-  document.write(dns)
-  document.write("<hr>")
 
-  
-}
-denis("hello")
+// let number1 = prompt("Unesite Prvu vrednost")
+// let number2 = prompt("Unesite Drugu vrednost")
+// let number3 = prompt("Unesite Trecu vrednost");
+// const brojevi = (number1,number2,number3) =>{
+//   const mnozenje = "Rezultat " + number1 * number2 * number3 ;
+//   return mnozenje;
 
-function fun (jedan, dva, tri){
-  document.write (jedan + " je bolja od " + dva + tri );
-  
-}
+//  }
+//  alert(brojevi(number1,number2,number3) );
 
-fun ("Fifa", "pesa", " i od f1 ")
+
 
 
