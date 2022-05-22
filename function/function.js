@@ -61,12 +61,12 @@
 
                     // [Globalne i lokalne variable]
         // globalna            
-//   var ime = "denis";
-//   function fun (){
-//       document.write (ime);
-//   }
-//   fun();
-//   document.write(ime);
+  var ime = "denis";
+  function fun (){
+      document.write (ime);
+  }
+  fun();
+  document.write(ime);
 
         // lokalna
   // function fun (){

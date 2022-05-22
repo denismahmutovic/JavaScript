@@ -148,12 +148,13 @@ izracunaj(12,"biciklo")
 
 // --------------------------DOMACI----------------------------------
 
-let number1 = prompt("Unesite Prvu vrednost")
-let number2 = prompt("Unesite Drugu vrednost")
-let number3 = prompt("Unesite Trecu vrednost");
-const brojevi = (number1,number2,number3) =>{
-  const mnozenje = "Rezultat " + number1 * number2 * number3 ;
-  return mnozenje;
+// let number1 = prompt("Unesite Prvu vrednost")
+// let number2 = prompt("Unesite Drugu vrednost")
+// let number3 = prompt("Unesite Trecu vrednost");
+// const brojevi = (number1,number2,number3) =>{
+//   const mnozenje = "Rezultat " + number1 * number2 * number3 ;
+//   return mnozenje;
 
- }
- alert(brojevi(number1,number2,number3) );
+//  }
+//  alert(brojevi(number1,number2,number3) );
+ 
