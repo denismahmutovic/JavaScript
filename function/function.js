@@ -162,15 +162,19 @@
 
 //}
 
-// let number1 = prompt("Unesite Prvu vrednost")
-// let number2 = prompt("Unesite Drugu vrednost")
-// let number3 = prompt("Unesite Trecu vrednost");
-// const brojevi = (number1,number2,number3) =>{
-//   const mnozenje = "Rezultat " + number1 * number2 * number3 ;
-//   return mnozenje;
+let number1 = prompt("Unesite Prvu vrednost")
+console.log(number1)
 
-//  }
-//  alert(brojevi(number1,number2,number3) );
+let number2 = prompt("Unesite Drugu vrednost")
+console.log(number2)
+let number3 = prompt("Unesite Trecu vrednost");
+console.log(number3)
+const brojevi = (number1,number2,number3) =>{
+  const mnozenje = "Rezultat " + number1 * number2 * number3 ;
+  return mnozenje;
+
+ }
+ alert(brojevi(number1,number2,number3) );
 
 
 

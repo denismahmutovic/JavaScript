@@ -482,6 +482,8 @@
 
 
 
+
+
 // let novcanice = [10,5, 20,50, 5,10,100,20,50]
 // let broj_novcanica = novcanice.length;
 // let ukupno = 0
@@ -501,16 +503,16 @@
 //    console.log(automobil)
 // }
 
-let automobili = { 
-   audi:["5000", "2017", "q7"],
-   bmw: ["6000", "2018", "330D"],
-   porshe:["7000", "2016", "boxter"],
-   mercedes:["8000", "2019", "s400"]
-}
-for (auto in automobili){
-let = naziv = automobili;
-let podaci_vozilu = automobili[auto];
-console.log(`naziv, model: ${podaci_vozilu[2]},godiste: ${podaci_vozilu[1]}, cena:${podaci_vozilu[0]}`)
-}
+// let automobili = { 
+//    audi:["5000", "2017", "q7"],
+//    bmw: ["6000", "2018", "330D"],
+//    porshe:["7000", "2016", "boxter"],
+//    mercedes:["8000", "2019", "s400"]
+// }
+// for (auto in automobili){
+// let = naziv = automobili;
+// let podaci_vozilu = automobili[auto];
+// console.log(`naziv, model: ${podaci_vozilu[2]},godiste: ${podaci_vozilu[1]}, cena:${podaci_vozilu[0]}`)
+// }
 
 
