@@ -114,19 +114,19 @@
 // }
 
         //Switch uslovi
-// var ime="Ivana";
-// switch (ime){
-//     case "Marija":
-//         document.write ("CAo Marija");
-//         break;
-//     case "Milica":
-//         document.write ("Cao Milice");
-//         break;
-//     case "Sanja":
-//         document.write ("Cao Sanja");
-//         break;
+// // var ime="Ivana";
+// // switch (ime){
+// //     case "Marija":
+// //         document.write ("CAo Marija");
+// //         break;
+// //     case "Milica":
+// //         document.write ("Cao Milice");
+// //         break;
+// //     case "Sanja":
+// //         document.write ("Cao Sanja");
+// //         break;
 //     default:    // ako nema vise slucajeva onda se koristi default
-//         document.write ("Cao Cao...");}
+// //         document.write ("Cao Cao...");}
 
   // for 
 
