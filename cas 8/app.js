@@ -74,25 +74,61 @@
 // console.log(sara)
 // console.log(imena)
 
-const godine = [12,76,26,6, 23,21,29,16]
+// const godine = [12,76,26,6, 23,21,29,16]
 
-function punoletna_deca (ages){
-    let punoletni = [];
-    for(let i of ages){
-        if(i >=18){
-            punoletni.push(i)
-        };
 
-    }
-    return punoletni;
+// function punoletna_deca (ages){
+//     let punoletni = [];
+//     for(let i of ages){
+//         if(i <=18){
+//             punoletni.push(i)
+//         };
+
+//     }
+//     return punoletni;
     
 
-}
+// }
+// console.log(punoletna_deca(godine));
 
 
-console.log(punoletna_deca(godine));
+
+// const maloletne_godine = [12,76,26,6, 23,21,29,16]
+
+// function maloletni (age){
+//     let prazna =[];
+//     for (let i of age){
+//         if(i < 18){
+//             prazna.push(i)
+        
+
+//         } 
+//     }
+//     return prazna;
+// }
+// console.log(maloletni(maloletne_godine))
 
 
+
+// let punoletna_mommci = [10,20,30,40,50,17,11]
+
+// function punoletni (age){
+//     let prazna = []
+//     for(let  i of age){
+//         if(i >= 18){
+//             prazna.push (i)
+
+//         }
+//     }
+//     return prazna;
+// }
+// console.log(punoletni(punoletna_mommci))
+
+
+const automobili = ["bmw","audi", "VW"]
+const brojevi = [5,12,8,130,44,140]
+const trazeniIndex = automobili.forEach (el => console.log(el))
+console.log(trazeniIndex)
 
 
 
