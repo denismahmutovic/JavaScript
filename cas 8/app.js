@@ -74,22 +74,22 @@
 // console.log(sara)
 // console.log(imena)
 
-// const godine = [12,76,26,6, 23,21,29,16]
+ const godine = [12,76,26,6, 23,21,29,16]
 
 
-// function punoletna_deca (ages){
-//     let punoletni = [];
-//     for(let i of ages){
-//         if(i <=18){
-//             punoletni.push(i)
-//         };
+function punoletna_deca (ages){
+    let punoletni = [];
+    for(let i of ages){
+        if(i <=18){
+            punoletni.push(i)
+        };
 
-//     }
-//     return punoletni;
+    }
+    return punoletni;
     
 
-// }
-// console.log(punoletna_deca(godine));
+}
+console.log(punoletna_deca(godine));
 
 
 
@@ -125,10 +125,10 @@
 // console.log(punoletni(punoletna_mommci))
 
 
-const automobili = ["bmw","audi", "VW"]
-const brojevi = [5,12,8,130,44,140]
-const trazeniIndex = automobili.forEach (el => console.log(el))
-console.log(trazeniIndex)
+// const automobili = ["bmw","audi", "VW",]
+// const brojevi = [5,12,8,130,44,140]
+// const trazeniIndex = automobili.flatMap (el => el < 144)
+// console.log(trazeniIndex)
 
 
 
