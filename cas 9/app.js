@@ -64,22 +64,60 @@
 
 // psece godine  u ljutkse godine
 
-const data1 = [1,3,4,2,7,6];
-const doAgeToHuman =(ages) => {
-    const humanAge = ages.map(age =>{
-        if(age > 2 && age < 8){
-            return(age *4) /2
-        } else if (age >2){
-            return age * 7;
-        }
-    });
+// const data1 = [1,3,4,2,7,6];
+// const doAgeToHuman =(ages) => {
+//     const humanAge = ages.map(age =>{
+//         if(age > 2 && age < 8){
+//             return(age *4) /2
+//         } else if (age >2){
+//             return age * 7;
+//         }
+//     });
 
-const less = humanAge.filter((el) => el <10);
-return less
+// const less = humanAge.filter((el) => el <10);
+// return less
 
-};
+// };
 
-console.log(doAgeToHuman (data1));
+// console.log(doAgeToHuman (data1));
+
+// --------------------------------------------------------------------------
+
+
+
+// const DATA1 = [2,26,38,75,11,29]
+// const DATA2 = ["a","b","c","d","e"]
+
+// const fun = (broj1,broj2)=>{
+//     const pomocna = broj1.concat(broj2);
+//     let prazna = []
+//     for(let i of pomocna){
+//         if(i %2 === 0){
+//             prazna.push[i]
+//         }
+//     }
+//     prazna.unshift(10,20)
+//     return "prvi pomocni niz je " + pomocna +   " drugi pomocni niz je " + prazna
+// }
+// console.log(fun(DATA1,DATA2))
+
+
+
+const words = ["98", "daljinski", "telefon", "voda", "ranac", 'stolica']
+
+const novi = words.filter((el) => el[1] === "e")
+const duzina = words.filter((el)=> el.length <6)
+// console.log(duzina)
+// console.log(novi)
+
+const numbers = [2,8,9,11,26,86,90,102,1003,1120];
+
+const novii = words.concat(numbers).filter((el) => el % 2 === 0 )
+// console.log(novii);
+const boolens = [true, false,true,false];
+const newW = novii.concat(boolens).filter((el) => typeof el === "boolean")
+console.log(newW)
+
 
 
 
