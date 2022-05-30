@@ -173,27 +173,84 @@
 // console.log(squre);
 
 
-const psece_godine = [1,3,4,2,7,6]
+// const psece_godine = [1,3,4,2,7,6]
 
-const dogAge = (ages) => {
-    const humanAge = ages.map((age) =>{
-        if (age > 2 && age < 8){
-            return (age * 4) /2;
-        } else if(age > 2){
-            return age *7
-        } else{
-            return age
+// const dogAge = (ages) => {
+//     const humanAge = ages.map((age) =>{
+//         if (age > 2 && age < 8){
+//             return (age * 4) /2;
+//         } else if(age > 2){
+//             return age *7
+//         } else{
+//             return age
+//         }
+//     });
+//     const manje_od10 = humanAge.filter((age) => age <10);
+//     return[humanAge,manje_od10]
+
+// }
+// console.log(dogAge(psece_godine))
+
+// const DATA1 = ["2", "26", "38", "75","11","29"]
+// const DATA2 = ["a","b", "c", "d", "e"]
+
+// const fun = (broj,broj2) => {
+//     const spojena = broj.concat(broj2);
+//     const prazan = []
+//     for(let i of spojena){
+//         if(i %2 ===0){
+//             prazan.push(i);
+//         }
+//     }
+//      prazan.unshift(10,20)
+//     return spojena+ prazan
+// }
+// console.log(fun(DATA1,DATA2))
+
+// const element = ["teziv0r","radio","aantena","telefon",10]
+// const brojevi = [2,3,4,4,5,6]
+
+// const trazi = element.filter((el)=> el.length <= 5)
+// console.log(trazi)
+
+// const parni = element.concat(brojevi).filter((el)=> el % 2===0)
+// console.log(parni)
+
+
+
+//                         //  >>>> MAPP ><<
+
+// const izmena = [2,5,10,3,4,8]
+// const koren = izmena.map((el) => Math.sqrt(el))
+// console.log(koren)
+
+
+// const brojevi = [1,2,3,4,5,6,7,8,9,10]
+
+// const mnozenje = brojevi.map((el,index)=> {
+//     if(index === 0 || index === 3 || index === 2){
+//         return el*el
+
+//     } else{
+//         return el
+//     }
+// })
+// console.log(mnozenje)
+
+
+const DATA = [1,3,4,2,7,6]
+const pasGogine = (ages) => {
+    let noveGodine = ages.map((el) =>{
+        if(el >2 && el < 8){
+            return (el*4/2);
+        } else if(el >2){
+            return el * 7
         }
-    });
-    const manje_od10 = humanAge.filter((age) => age <10);
-    return[humanAge,manje_od10]
-
+    })
+    const less10 = noveGodine.filter((el) => el < 10)
+    return less10
 }
-console.log(dogAge(psece_godine))
-
-
-
-
+console.log(pasGogine(DATA))
 
 
 
