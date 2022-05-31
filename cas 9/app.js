@@ -238,34 +238,58 @@
 // console.log(mnozenje)
 
 
-const DATA = [1,3,4,2,7,6]
-const pasGogine = (ages) => {
-    let noveGodine = ages.map((el) =>{
-        if(el >2 && el < 8){
-            return (el*4/2);
-        } else if(el >2){
-            return el * 7
-        }
-    })
-    const less10 = noveGodine.filter((el) => el < 10)
-    return less10
-}
-console.log(pasGogine(DATA))
+// const DATA = [1,3,4,2,7,6]
+// const pasGogine = (ages) => {
+//     let noveGodine = ages.map((el) =>{
+//         if(el >2 && el < 8){
+//             return (el*4/2);
+//         } else if(el >2){
+//             return el * 7
+//         }
+//     })
+//     const less10 = noveGodine.filter((el) => el < 10)
+//     return less10
+// }
+// console.log(pasGogine(DATA))
 
 
 
+// const imena = [20,"mare","care","legedno","benko"]
+// const numbers = [2,3,4,6,7,8,10]
+// const spojena = imena.concat(numbers).filter((el)=> el%2===0)
+// console.log(spojena)
+// const koren = numbers.map((el)=>Math.sqrt(el))
+// console.log(koren)
+// const traziSlovo = imena.filter((el)=> el[1]=== "a" )
+// console.log(traziSlovo)
+
+// const manjeOd6 = imena.filter((el)=> el.length < 6)
+// console.log(manjeOd6)
 
 
+// const pas = [1,3,4,2,7,6]
+
+// const psece_godine = (ages) =>{
+//     const noveGodine = ages.map((el) =>{
+//         if(el >2 ** el< 8){
+//             return (el * 4/2);
+//         }
+//         else if(el > 2){
+//             return (el *7)
+//         }
+
+//     })
+    
+//     const vratiNiz10 = noveGodine.filter((el) => el < 10)
+//     return vratiNiz10;
+
+//     }
+//     console.log(psece_godine(pas))
 
 
+    // Zadatak. Napraviti funkciju koja pravi niz koji ce iz postojeceg napraviti novi uz ispunjenje uslova:
+// value > 2 => value * 7
+// value >3 and value <7 => (value*4)/2
+// Ostale vrednosti da ne uzima u obzir
+// I na kraju treba novi niz vratiti sa godinama <11.
 
-
-
-
-
-
-
-
-
-
- 
