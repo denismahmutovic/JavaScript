@@ -91,13 +91,13 @@
 // }
 // console.log(sumAge(DATAA))
 
-const DATAA = [26,18,16,22,30,28]
-const racunaj = (ages) =>{
-    const godine = ages.reduce((prehodna,sada)=> prehodna+sada) / ages.length
-    return parseFloat(godine.toFixed(2))
+// const DATAA = [26,18,16,22,30,28]
+// const racunaj = (ages) =>{
+//     const godine = ages.reduce((prehodna,sada)=> prehodna+sada) / ages.length
+//     return parseFloat(godine.toFixed(2))
 
-}
-console.log(racunaj(DATAA))
+// }
+// console.log(racunaj(DATAA))
 //  const imena = ["dns","frs", "beni"]
 
 //  const fun = (prvi,drugi) => {
@@ -137,17 +137,35 @@ console.log(racunaj(DATAA))
 // console.log(ker_age(ker))
 
 
-// const DATA = [1,2,3,4,5,6,7,8,9,10]
-// const fun = (fun)=>{
+// const miles = [15,20,1, 60,45,120]
 
+// const fun =(milje)=>{
+//   
+// }
+// console.log(fun(miles))
 
-// const parne = DATA.filter((el)=> el %2===0).map((el)=> el*el)
-// const sum = parne.reduce((total,value)=> total+value)
-// return sum
+// const DATA = [1,2,4,5,6,7,8,9,10]
+// const fun = (funn)=>{
+//     const parni = DATA.filter((el)=> el%2===0).map((el)=> el*el)
+// const vrati = parni.reduce((total,value)=> total+value)
+// return vrati
+
+// }
+// console.log(fun(DATA))
+
+// const DATA = [1,2,4,5,6,7,8,9,10]
+// const fun = (arr)=>{
+//     const parni = arr.filter((el)=> el %2===0).map((el)=> el * el)
+//     const zbir = parni.reduce((total,value)=> total+value)
+//     return zbir
 // }
 // console.log(fun(DATA))
 
 
-
-
-
+const miles =[15,20,1,60,45,120]
+const fun = (arr)=>{
+    const milje = arr.map((el)=> el*1.6)
+    const zbir = milje.reduce((total,value)=> total+value)
+    return zbir
+}
+console.log(fun(miles))
