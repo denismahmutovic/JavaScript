@@ -153,13 +153,13 @@
 // }
 // console.log(fun(DATA))
 
-// const DATA = [1,2,4,5,6,7,8,9,10]
-// const fun = (arr)=>{
-//     const parni = arr.filter((el)=> el %2===0).map((el)=> el * el)
-//     const zbir = parni.reduce((total,value)=> total+value)
-//     return zbir
-// }
-// console.log(fun(DATA))
+const DATA = [1,2,4,5,6,7,8,9,10]
+const fun = (arr)=>{
+    const parni = arr.filter((el)=> el %2===0).map((el)=> el * el)
+    const zbir = parni.reduce((total,value)=> total+value)
+    return zbir
+}
+console.log(fun(DATA))
 
 
 const miles =[15,20,1,60,45,120]
