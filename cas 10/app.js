@@ -153,19 +153,35 @@
 // }
 // console.log(fun(DATA))
 
-const DATA = [1,2,4,5,6,7,8,9,10]
-const fun = (arr)=>{
-    const parni = arr.filter((el)=> el %2===0).map((el)=> el * el)
-    const zbir = parni.reduce((total,value)=> total+value)
-    return zbir
-}
-console.log(fun(DATA))
+// const DATA = [1,2,4,5,6,7,8,9,10]
+// const fun = (arr)=>{
+//     const parni = arr.filter((el)=> el %2===0).map((el)=> el * el)
+//     const zbir = parni.reduce((total,value)=> total+value)
+//     return zbir
+// }
+// console.log(fun(DATA))
 
 
-const miles =[15,20,1,60,45,120]
-const fun = (arr)=>{
-    const milje = arr.map((el)=> el*1.6)
-    const zbir = milje.reduce((total,value)=> total+value)
-    return zbir
+// const miles =[15,20,1,60,45,120]
+// const fun = (arr)=>{
+//     const milje = arr.map((el)=> el*1.6)
+//     const zbir = milje.reduce((total,value)=> total+value)
+//     return zbir
+// }
+// console.log(fun(miles))
+
+
+const DATA = [100,65,76,80,99,53,1,2]
+const DATA2 = ["a","b","c","d"]
+const fun = (arr1,arr2)=>{
+    const spajanje = arr1.concat(arr2);
+    const prazna =[]
+    for(let i of spajanje){
+        if(i % 2===0){
+            prazna.push(i)
+        }
+    }
+    prazna.unshift(10,20)
+    return spajanje+prazna
 }
-console.log(fun(miles))
+console.log(fun(DATA,DATA2))
