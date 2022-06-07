@@ -171,17 +171,61 @@
 // console.log(fun(miles))
 
 
-const DATA = [100,65,76,80,99,53,1,2]
-const DATA2 = ["a","b","c","d"]
-const fun = (arr1,arr2)=>{
-    const spajanje = arr1.concat(arr2);
-    const prazna =[]
-    for(let i of spajanje){
-        if(i % 2===0){
-            prazna.push(i)
-        }
-    }
-    prazna.unshift(10,20)
-    return spajanje+prazna
+// const miles = [15,20,1,60,45,120]
+
+// const fun = (milje)=>{
+//     const izdracunaj = milje.map((el)=> el*1.60)
+//     const total = izdracunaj.reduce((total,value)=> total+value)
+//     return total
+    
+// }
+// console.log(fun(miles))
+
+// const DATA = [1,2,3,4,5,6,7,8,9,10]
+
+// const fun = ()=>{
+//     const parni = DATA.filter((el)=> el%2===0).map((el)=> el*el)
+//     const zbir = parni.reduce((total,value)=> total+value)
+//     return zbir
+// }
+// console.log(fun(DATA))
+
+// const imena = ["marko","sara","nevena"]
+// const fun =()=>{
+//     const VelikoSlovo = imena.map((el)=> el.toUpperCase())
+//     return VelikoSlovo
+
+// }
+// console.log(fun(imena))
+
+// const DATA = [100,65,76,80,99,53,1,2]
+
+// const fun =(arr)=>{
+//     const parni = arr.filter((el)=> el%2===0 && el <= 50)
+//     return parni
+// }
+// console.log(fun(DATA))
+
+// const DATA = [5,3,2,8,7,9]
+// const fun = (arr)=>{
+//     const dodaj = arr.map((el)=> el*el+10).reduce((total,value)=> total+value)
+
+    
+//     return dodaj
+// }
+// console.log(fun(DATA))
+
+// const DATA = [100,200,250,400,520]
+// const zbir = DATA.reduce((total,value)=> total+value,30)
+// console.log(zbir)
+
+
+const DATA = [26,18,16,22,30,28]
+const fun = (ages)=>{
+   let len = ages.length
+   const sumAge = ages.reduce((total,value)=> total + value)
+   return Number ((sumAge / len).toFixed(2))
+
+
 }
-console.log(fun(DATA,DATA2))
+console.log(fun(DATA))
