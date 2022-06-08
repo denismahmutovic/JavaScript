@@ -220,12 +220,27 @@
 // console.log(zbir)
 
 
-const DATA = [26,18,16,22,30,28]
-const fun = (ages)=>{
-   let len = ages.length
-   const sumAge = ages.reduce((total,value)=> total + value)
-   return Number ((sumAge / len).toFixed(2))
+// const DATA = [26,18,16,22,30,28]
+// const fun = (ages)=>{
+//    let len = ages.length
+//    const sumAge = ages.reduce((total,value)=> total + value)
+//    return Number ((sumAge / len).toFixed(2))
 
 
+// }
+// console.log(fun(DATA))
+
+// const DATA = [51,30,39,29,10,13]
+// const every=DATA.some((el)=> el >=1)
+// console.log(every)
+
+// const DATA = ["bostan","bostan",39,"grozdje", 10,"borovnica"]
+// const ToString = DATA.join ("---")
+// console.log(ToString)
+
+const DATA = [10,12,20,50,25]
+const fun = (arr)=>{
+    const BroVeci = arr.filter((el)=> el >10)
+    return BroVeci
 }
 console.log(fun(DATA))
