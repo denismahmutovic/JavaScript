@@ -105,9 +105,14 @@
      firstname: "Beni",
      lastname: " Mahmutovic",
      
-
  }
  name.FullName.call(name2, "Novi Sad")
+ name.FullName.apply(name, ["Beograd"])
+
+ 
+
+
+ 
 
     
 
