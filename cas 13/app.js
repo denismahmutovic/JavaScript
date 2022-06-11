@@ -18,32 +18,114 @@
 // } 
 // console.log(auto.drive())
 
-const car = {
-    make: "audi",
-    model: "a3",
-    maxSpred:220,
-    currentSpedd: 0,
-    drive:function(num){
-        this.currentSpedd + num
-        if(this.currentSpedd +this.currentSpedd ){
-            alert("ne moze ovako")
-         } else{
-             this.currentSpedd += num
-         }
-    },
-    break:function(num){
-        this.currentSpedd - num
+// const car = {
+//     make: "audi",
+//     model: "a3",
+//     maxSpred:220,
+//     currentSpedd: 0,
+//     drive:function(num){
+//         this.currentSpedd + num
+//         if(this.currentSpedd +this.currentSpedd ){
+//             alert("ne moze ovako")
+//          } else{
+//              this.currentSpedd += num
+//          }
+//     },
+//     break:function(num){
+//         this.currentSpedd - num
     
+//     },
+//     stop:function(){
+//         this.currentSpedd = 0
+//     },
+
+// }
+
+// car.drive (180)
+// car.drive(41)
+// console.log(car)
+
+
+
+// const car = {
+//     mark: "Audi",
+//     Model:" q7",
+//     MaxSpeed:220,
+//     currentSpeed: 0,
+//     Drive:function(value){
+//         if(this.currentSpeed + value > this.MaxSpeed ){
+//             alert ("Ne moze ovo ovako");
+//         } else{
+//             this.currentSpeed += value;
+//         }
+//     },
+//     breke:function(value){
+//         this.currentSpeed -= value
+        
+//     },
+//     stop:function(){
+//         this.currentSpeed = 0
+//     }
+
+// }
+// car.Drive(180)
+// console.log(car)
+// car.Drive(41)
+// console.log(car)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const car = {
+    mark: "Audi",
+    Model:" q7",
+    MaxSpeed:220,
+    currentSpeed: 0,
+    Drive:function(value){
+        this.currentSpeed += value
+    },
+    breke:function(value){
+        this.currentSpeed -= value
+        
     },
     stop:function(){
-        this.currentSpedd = 0
-    },
+        this.currentSpeed = 0
+    }
 
 }
 
-car.drive (180)
-car.drive(41)
+car.Drive(50)
+car.Drive(10)
+car.Drive(40)
+car.Drive(80)
+car.Drive(40)
+car.breke(120)
+
+
 console.log(car)
+
+
+
+
 
 
 
