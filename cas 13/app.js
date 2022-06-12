@@ -103,7 +103,7 @@ const car = {
     Drive:function(value){
         this.currentSpeed += value
     },
-    breke:function(value){
+    brake:function(value){
         this.currentSpeed -= value
         
     },
@@ -118,7 +118,7 @@ car.Drive(10)
 car.Drive(40)
 car.Drive(80)
 car.Drive(40)
-car.breke(120)
+car.brake(120)
 
 
 console.log(car)
