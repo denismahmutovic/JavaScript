@@ -101,25 +101,22 @@ const car = {
     MaxSpeed:220,
     currentSpeed: 0,
     Drive:function(value){
-        this.currentSpeed += value
+        if(this.currentSpeed + value > this.MaxSpeed){
+            alert("ne moze")
+        }else{
+            this.currentSpeed+= value
+        }
     },
     brake:function(value){
-        this.currentSpeed -= value
-        
+        this.currentSpeed -=value
     },
     stop:function(){
         this.currentSpeed = 0
     }
-
 }
 
-car.Drive(50)
-car.Drive(10)
-car.Drive(40)
-car.Drive(80)
-car.Drive(40)
-car.brake(120)
-
+car.Drive(180)
+car.Drive(43)
 
 console.log(car)
 
