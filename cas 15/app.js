@@ -366,16 +366,20 @@ const imena = {
     ime:"denis",
     godine:25
 }
-Object.seal(imena)
-imena.godine = 22
-Object.keys(imena)  
+const prezimena ={
+    prvo: "mahmutovic",
+    drugo:"Nicevic",
+    trece:"Dzankovic"
 
-console.log(imena)
+}
 
 
 
-console.log(names)
-console.log(NewName)
+
+const spoji = {
+    ...imena,...prezimena
+}
+console.log(spoji)
 
 const numbers = [1,2,3,1,5,2,7,10]
 
@@ -383,3 +387,5 @@ const numbers = [1,2,3,1,5,2,7,10]
 // console.log(nemaDupli)
 const nemaDupli = [...new Set (numbers)]
 console.log(nemaDupli)
+
+//primitivne i referetne 
