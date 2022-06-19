@@ -24,15 +24,21 @@
 // console.log("komanda2")
 // console.log("komanda2")
 
-console.log("comanda 1")
-console.log("comanda 2")
+// console.log("comanda 1")
+// console.log("comanda 2")
 
-setTimeout(() => {
-    console.log("comanda3")
-},5000);
+// setTimeout(() => {
+//     console.log("comanda3")
+// },5000);
 
-console.log("comanda4")
+// console.log("comanda4")
 
-setTimeout(()=>{
-    console.log("comanda 5")
-},5000)
+// setTimeout(()=>{
+//     console.log("comanda 5")
+// },3000)
+
+
+let r = fetch("https://6240631319f60987923b424c.mockapi.io/Users")
+.then(response => response.json()).then(data => {
+    console.log(data);
+})
