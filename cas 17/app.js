@@ -92,19 +92,28 @@
 
 // console.log("stigli smo  do ovg dela")
 
-function mojaFunc() {
-    a = 10
-    // console.log("neke komande")
-    function drugaFunc(arg1){
-        console.log("drugaa")
-        console.log(arr1+a)
+
+ function mojaFunc (){
+     
+     a = 11;
+     b = 12;
+     function drugaFunc(arg1){
+         console.log("drugaa");
+        console.log(a + arg1);
         
-    }
-    return drugaFunc
-}
+     }
+     return drugaFunc
+     
+ } 
+
  res = mojaFunc()
- res(5)
+ res(9)
+
+ 
 
 //  mojaFunc()() //moze i ovako
+
+
+
 
 
