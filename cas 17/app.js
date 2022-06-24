@@ -130,7 +130,7 @@ const getUser = async ()=> {
 }
 getUser().then((res)=> console.log(res))
 
-
+//nizovu objekti
 
 
 
