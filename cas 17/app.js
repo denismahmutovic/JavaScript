@@ -93,6 +93,8 @@
 // console.log("stigli smo  do ovg dela")
 
 
+
+
  function mojaFunc (){
      
      a = 11;
@@ -112,6 +114,25 @@
  
 
 //  mojaFunc()() //moze i ovako
+
+
+
+// quary PARAM (s) ? u http
+
+const BASE_URL = "https://jsonplaceholder.typicode.com";
+
+const getUser = async ()=> {
+   const resposne = await fetch(BASE_URL + "/users");
+   const post = await resposne.json()
+   return post.map((el)=> {
+       return {ime: "denis", id:el.id}
+   })
+}
+getUser().then((res)=> console.log(res))
+
+
+
+
 
 
 
