@@ -13,17 +13,25 @@
 
 
 
-function myFunction(){
-    console.log("poruka pre pocetka izvzavanje posla")
-    setTimeout(()=>{
-        console.log("prvi posao ide da se izvrsava");
-    },1500)
-    setTimeout(()=>{
-        console.log("drugi deo posla ide da se izvesava")
-    },1500)
-    setTimeout(()=>{
-        console.log("treci deo posle ide da se izvrsava")
-    },1500)
-    return console.log("kraj glave funkcije")
-}
-myFunction()
+const students = [
+    { name: "Faris", grade: 8, year: 2 },
+    { name: "Isko", grade: 10, year: 4 },
+    { name: "Aldin", grade: 8, year: 2 },
+    { name: "Amina", grade: 9, year: 4 },
+    { name: "Sabina", grade: 9, year: 3 },
+    { name: "Denis", grade: 7, year: 4 },
+    { name: "Senad", grade: 6, year: 1 },
+]
+function getAvgGrade(array){
+       const grades = array.map((el)=> el.grade)
+       console.log(grades)
+       const imena = array.map((el)=> el.name)
+       console.log(imena)
+       const years = array.map((el)=> el.year)
+       console.log(years)
+       const parni = array.filter((el)=> el.year %2===0)
+       console.log(parni)
+       
+    
+    }
+    getAvgGrade(students);

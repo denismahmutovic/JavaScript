@@ -95,21 +95,21 @@
 
 
 
- function mojaFunc (){
+//  function mojaFunc (){
      
-     a = 11;
-     b = 12;
-     function drugaFunc(arg1){
-         console.log("drugaa");
-        console.log(a + arg1);
+//      a = 11;
+//      b = 12;
+//      function drugaFunc(arg1){
+//          console.log("drugaa");
+//         console.log(a + arg1);
         
-     }
-     return drugaFunc
+//      }
+//      return drugaFunc
      
- } 
+//  } 
 
- res = mojaFunc()
- res(9)
+//  res = mojaFunc()
+//  res(9)
 
  
 
@@ -119,22 +119,80 @@
 
 // quary PARAM (s) ? u http
 
-const BASE_URL = "https://jsonplaceholder.typicode.com";
+// const BASE_URL = "https://jsonplaceholder.typicode.com";
 
-const getUser = async ()=> {
-   const resposne = await fetch(BASE_URL + "/users");
-   const post = await resposne.json()
-   return post.map((el)=> {
-       return {ime: "denis", id:el.id}
-   })
-}
-getUser().then((res)=> console.log(res))
+// const getUser = async ()=> {
+//    const resposne = await fetch(BASE_URL + "/users?id=1");
+//    const post = await resposne.json()
+//    return post
+  
+// }
+// getUser().then((res)=> console.log(res))
 
 //nizovu objekti
 
+ 
+// const getUser = async () =>{
+//     const resposne = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const posts = await resposne.json()
+//     const trazimo =  posts.filter((el)=> el.title === 'nesciunt quas odio')
+//     return trazimo.map((el)=>{
+//         return{title:"Naslov", id:el.id}
+//     })
+
+// }
+// getUser().then((res)=> console.log(res))
+// .catch((data)=>{
+//     console.log("test nije prosao",(data))
+// })
+
+const user = async ()=>{
+    const resposnee = await fetch("https://jsonplaceholder.typicode.com/users");
+    const post = await resposnee.json()
+    const trazi = post.filter((el)=> el.name === "Leanne Graham")
+    const trazi2 = post.filter((el)=>el.username === "Antonette" )
+    return trazi2.map((el)=>{
+        return {name:"Denis.m",id:el.id}
+    })
+} 
+
+user().then((res)=> console.log(res))
+
+// const getUser = async () =>{
+// const resposne = await fetch("https://jsonplaceholder.typicode.com/users"
+       
+//     .then(res =>{
+//         if(res.ok){
+//             console.log("Succest")
+//         } else{
+//             console.log("Unsuccest")
+//         } return res
+//     })
+//     const posts = await resposne.json()
+//     return posts
+    
+
+// }
+// getUser().then((res)=> console.log(res))
 
 
 
 
+// fetch("https://jsonplaceholder.typicode.com/users?id=1",
+// {
+//     method: 'POST', // or 'PUT'
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(
+//         {   
+//             name:"Denis",
+//             Prezime:"Mahmutovic"
+//         }
+
+//     ),
+//   })
+//   .then(res => res.json())
+//   .then(data => console.log(data))
 
 

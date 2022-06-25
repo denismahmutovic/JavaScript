@@ -331,6 +331,7 @@ const watchList = [
     }
 ];
 
+
 function getRatung(watchList) {
     let averageRating;
     const NolanMovies = watchList.filter((el)=> el.Director === "Christopher Nolan")
@@ -341,6 +342,9 @@ function getRatung(watchList) {
 
 }
 console.log(getRatung(watchList))
+
+
+
 
 // const osoba ={
 //     name:"denis",
