@@ -331,12 +331,10 @@ const watchList = [
 
 
 function getRatung(watchList) {
-    let averageRating;
-    const NolanMovies = watchList.filter((el)=> el.Director === "Christopher Nolan")
-    const rating = NolanMovies.map((el)=> +el.imdbRating)
-    const len = rating.length;
-    averageRating = rating.reduce((total,value)=> total +value) /len
-    return averageRating;
+    const traziFilm = watchList.filter((el)=> el.Director === "Christopher Nolan")
+    const prosecnaOcena = traziFilm.map((el)=> +el.imdbRating)
+    .reduce((total,value)=> total+value ) / traziFilm.length
+    return prosecnaOcena
 
 }
 console.log(getRatung(watchList))
