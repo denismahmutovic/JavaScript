@@ -1,15 +1,4 @@
-//  Asinhroni JS 
 
-// const fun = function (){
-//     console.log("pocetak posla...")
-//     setTimeout(function(){
-//         for(let i =0; i <= 9999999101;i++){
-//             return console.log("kraj for pelje")
-//         }
-//     },1000)
-//     return "kraj cele funkcije"
-// }
-// console.log(fun())
 
 
 
@@ -162,12 +151,86 @@
 
 
 
+
 // Preko new Set() gubimo duplikate, ali je potrebno opet vratiti u niz.
 
+// const numbers = [1,2,3,1,5,2,7,2,10]
+// const spojeni = new Set (numbers)
+// const names = ["faris","aldin","senad","denis","dzenan"]
+// const spojiDva = [...names,...spojeni]
+// console.log(spojiDva)
 
-const numbers = [1,2,3,1,5,2,7,2,10]
-const nemaDupli = new Set (numbers)
-const names = ["faris","aldin","senad","denis","dzenan"]
-const spojeni = [...names,...nemaDupli]
 
-console.log(spojeni)
+// const movies = [
+//     { title: "Movie 1", rating: 8, budget: "230M" },
+//     { title: "Movie 2", rating: 5, budget: "200M" },
+//     { title: "Movie 3", rating: 9, budget: "280M" },
+//     { title: "Movie 4", rating: 4, budget: "300M" },
+//     { title: "Movie 5", rating: 8, budget: "180M" }
+// ]
+// const newArr = movies.map((el)=> el.rating * parseInt(el.budget))
+// const fl = movies.filter((el)=> el.title === "Movie 3")
+// const izmena = fl.map((el)=>{
+//     return{
+//         title: el.title ="IZMENA", rating: el.rating
+//     }
+// })
+// console.log(izmena)
+// const trazi = movies.map((el)=>{
+//     return{
+//         rating: el.rating, budget: el.budget=+ 1 // el.budger prebacivanje strniga u number =+
+//     }
+// })
+// console.log(trazi)
+// console.log(newArr)
+
+
+
+
+// function Nova (){
+//     console.log("pocetak posla")
+// } setTimeout (()=>{
+//     console.log("CEKA")
+// },2000);
+// console.log("kraj posla")
+// console.log(">")
+
+// Nova()
+
+
+//  Asinhroni JS 
+
+// const fun = function (){
+
+//     console.log("pocetak posla...")
+//     setTimeout(function(){
+//         for(let i =0; i <= 9999999101;i++){
+//             return console.log("kraj for pelje")
+//         }
+//     },1000)
+//     return "kraj cele funkcije"
+// }
+// console.log(fun())
+
+myPromise = new Promise ((resolve,reject)=>{
+    const person = {
+        firstName: "denis",
+        lastName: "mahmutovic",
+        age:25,
+        fullName: function(){
+            return this.firstName + " " + this.lastName 
+        }
+    };
+    if(person.age >= 26 && person.age <= 30){
+        resolve(person.fullName());
+    } else{
+        reject(person.fullName())
+    }
+})
+myPromise
+.then((arg)=>{
+    console.log(`person ${arg} USLOV PROSAO`)
+})
+.catch((arg)=>{
+    console.log(`peson ${arg} USLOV NIJE PROSAO`)
+})
