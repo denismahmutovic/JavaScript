@@ -212,25 +212,110 @@
 // }
 // console.log(fun())
 
-myPromise = new Promise ((resolve,reject)=>{
-    const person = {
-        firstName: "denis",
-        lastName: "mahmutovic",
-        age:25,
-        fullName: function(){
-            return this.firstName + " " + this.lastName 
-        }
-    };
-    if(person.age >= 26 && person.age <= 30){
-        resolve(person.fullName());
-    } else{
-        reject(person.fullName())
-    }
-})
-myPromise
-.then((arg)=>{
-    console.log(`person ${arg} USLOV PROSAO`)
-})
-.catch((arg)=>{
-    console.log(`peson ${arg} USLOV NIJE PROSAO`)
-})
+// myPromise = new Promise ((resolve,reject)=>{
+//     const person = {
+//         firstName: "denis",
+//         lastName: "mahmutovic",
+//         age:25,
+//         fullName: function(){
+//             return this.firstName + " " + this.lastName 
+//         }
+//     };
+//     if(person.age >= 26 && person.age <= 30){
+//         resolve(person.fullName());
+//     } else{
+//         reject(person.fullName())
+//     }
+// })
+// myPromise
+// .then((arg)=>{
+//     console.log(`person ${arg} USLOV PROSAO`)
+// })
+// .catch((arg)=>{
+//     console.log(`peson ${arg} USLOV NIJE PROSAO`)
+// })
+
+
+
+// function mojaFunc(){
+//     console.log("prva");
+//     function drugaFunc(){
+//         console.log("driga")
+//     };
+//     return drugaFunc
+// };
+// mojaFunc()()
+
+
+//Closure
+
+// function mojaFunc(){
+//     a= 10
+//     b= 12  
+//     console.log(b)
+
+//     function drugaFunc(arg1){
+//         console.log("Druga")
+//         console.log(a + arg1);
+//     }
+//     return drugaFunc
+// }
+// rez = mojaFunc()
+// rez(12)
+
+
+
+
+// prom = new Promise((res,rej)=>{
+//     res()
+// })
+// prom.then(()=>{
+//     console.log("b")
+    
+// });
+
+// console.log("A")
+
+// prom.then(()=>{
+//     console.log("C")
+// })
+// // prvo se izvrsava spoljni Promise pa onda oni unutar njih
+
+
+ const getUsers = async ()=>{
+     const response = await fetch("https://jsonplaceholder.typicode.com/users")
+     const posts = await response.json()
+     return posts
+ }
+ getUsers().then((res)=> console.log(res))
+
+ const get = async ()=>{
+     const response = fetch ("ddssad")
+     const post =  await response.json()
+     return post.map((el)=>{
+         return{name:"111s",id:el.id}
+     })
+} 
+ 
+
+ /// RADII
+
+//   fetch("https://jsonplaceholder.typicode.com/users",
+// {
+//     method: 'POST', // or 'PUT'
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(
+//         {   
+//             name:"Denis",
+//             Prezime:"Mahmutovic",
+//             Email:"dmahmutovic55@gmail.com"
+//         }
+
+//     ),
+//   })
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+  
+ 
