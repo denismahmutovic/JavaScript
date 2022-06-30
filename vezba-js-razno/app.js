@@ -282,40 +282,149 @@
 // // prvo se izvrsava spoljni Promise pa onda oni unutar njih
 
 
- const getUsers = async ()=>{
-     const response = await fetch("https://jsonplaceholder.typicode.com/users")
-     const posts = await response.json()
-     return posts
- }
- getUsers().then((res)=> console.log(res))
+//  const getUsers = async ()=>{
+//      const response = await fetch("https://jsonplaceholder.typicode.com/users?id=2")
+//      const posts = await response.json()
+//      return posts.map((el)=>{
+//          return {name:"denis", id:el.id, email:el.email}
+//      })
+//  }
+//  getUsers().then((res)=> console.log(res))
 
- const get = async ()=>{
-     const response = fetch ("ddssad")
-     const post =  await response.json()
-     return post.map((el)=>{
-         return{name:"111s",id:el.id}
-     })
-} 
+ 
  
 
  /// RADII
 
-//   fetch("https://jsonplaceholder.typicode.com/users",
+//   fetch("https://jsonplaceholder.typicode.com/posts",
 // {
-//     method: 'POST', // or 'PUT'
+//     method: 'POST', 
 //     headers: {
 //       'Content-Type': 'application/json',
 //     },
 //     body: JSON.stringify(
-//         {   
-//             name:"Denis",
-//             Prezime:"Mahmutovic",
-//             Email:"dmahmutovic55@gmail.com"
-//         }
-
-//     ),
+//         [
+//             {
+//               "id": 1,
+//               "name": "Denis",
+//               "username": "Mahmutovic",
+//               "email": "Dmahmutovic55@gmail.com",
+//               "address": {
+//                 "street": "Serbia",
+//                 "suite": "/",
+//                 "city": "Novi Pazar",
+//                 "zipcode": "36300",
+//                 "geo": {
+//                   "lat": "-37.3159",
+//                   "lng": "81.1496"
+//                 }
+//               },
+//               "phone": "1-770-736-8031 x56442",
+//               "website": "hildegard.org",
+//               "company": {
+//                 "name": "Romaguera-Crona",
+//                 "catchPhrase": "Multi-layered client-server neural-net",
+//                 "bs": "harness real-time e-markets"
+//               }
+//             },]
+//     )
 //   })
 //   .then(res => res.json())
 //   .then(data => console.log(data))
   
  
+
+
+function myMove (n){
+    a= ""
+    for(let i = 1; i<=n;i++){
+        if(i!==1)
+        a+= "*"
+        if(i===1)
+        console.log(i)
+        else{
+            console.log(`1${a}${i}`)
+        }
+    }
+}
+myMove(10)
+
+// RESENJE:
+// 1
+//  1*2
+//  1**3
+//  1***4
+//  1****5
+//  1*****6
+//  1******7
+//  1*******8
+//  1********9
+//  1*****10
+
+
+
+                // OKRECE STRING U NAZAT PR:"Denis": VRACA "sineD"
+
+const reverseString = (someString) => {
+    	let arr = someString.split(' ');
+    	arr.reverse();
+    	for (let i = 0; i < arr.length; i++) {
+    		let arr1 = arr[i].split('');
+    		arr1.reverse();
+    		arr[i] = arr1.join('');
+    	}
+    	someString = arr.join(' ');
+    	return someString;
+    };
+    
+    console.log(reverseString('denis')); // okreni ime 
+
+
+
+
+
+    const isPalindrome = (someString) => {
+        let stringUnazad = someString.split('');
+        stringUnazad.reverse();
+        stringUnazad = stringUnazad.join('');
+        if (stringUnazad.toLowerCase() === someString.toLowerCase()) {
+            return true;
+        }
+        return false;
+    };
+    
+    console.log(isPalindrome('Racecar')); // true
+    console.log(isPalindrome('apple')); // false
+ 
+
+
+
+
+            //  VRACA SLOVA KOA SE NAJVISE PONAVLJAJU 
+
+    const mostCommonCharacter = (someString) => {
+        	let maxPonavljanja = 0;
+        	let maxSlovo = someString[0];
+        	for (let i = 0; i < someString.length; i++) {
+        		let brojac = 0;
+        		for (let j = 0; j < someString.length; j++) {
+        			if (someString[i] === someString[j]) {
+        				brojac++;
+        			}
+        		}
+        		if (brojac > maxPonavljanja) {
+        			maxPonavljanja = brojac;
+        			maxSlovo = someString[i];
+        		} else if (brojac === maxPonavljanja) {
+        			if (someString[i].localeCompare(maxSlovo) === -1) {
+        				maxSlovo = someString[i];
+        				maxPonavljanja = brojac;
+        			}
+        		}
+        	}
+        	return maxSlovo;
+        };
+        
+        console.log(mostCommonCharacter('abcddefg')); // d
+        console.log(mostCommonCharacter('hfeggbdeff')); // f
+  
