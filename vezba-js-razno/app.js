@@ -1,5 +1,12 @@
 
 
+   //BRZ NACIN DA NADJEMO NAJVECI BROJ U NIZU
+          
+// const numArray = [10, 30 ,50 , 100, 200,1000];
+
+// console.log(Math.max.apply(null, numArray))
+
+
 
 
 // const students = [
@@ -102,6 +109,18 @@
 //     const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2,6]);
 
 //   console.log(squaredIntegers);
+
+
+
+            //spoji sva tri i izvuci boolean
+
+// const words = ["televizor","daljinski","telefon","voda","ranac","stolica"];
+// const numbers = [2,8,9,11,26,85,86,90,102,1003,1120];
+// const booleans = [true,false,true,false]
+// const spoji= [...numbers,...booleans,...words]
+// const trazi = spoji.filter((el)=> typeof el ==='boolean')
+
+// console.log(trazi);
 
 
 
@@ -427,4 +446,61 @@ const reverseString = (someString) => {
         
         console.log(mostCommonCharacter('abcddefg')); // d
         console.log(mostCommonCharacter('hfeggbdeff')); // f
+
+
+        // / Make the function that takes 3 arguments: array of objects, key as string and value.
+        // The function should find all objects in the array (1st argument) that have property (2nd argument) equal to the value (3rd argument) and return array of objects that pass this test.
+        // You can consider that each object will have the property passed as 2nd value.
+        
+        // Example:
+
+
+        const array1 = [
+            { id: "333222111", name: "Denis", age: "22" },
+            { id: "321123432", name: "Amar", age: "25" },
+            { id: "222312543", name: "Semir", age: "32" },
+          ];
+          
+          function getObjects(array, key, value) {
+              return array.filter(obj => obj[key] === value)
+          }
+          
+          console.log(getObjects(array1, "name", "Semir",)); 
+          // result: [ { id: '222312543', name: 'Semir', age: '32' } ] 
+          
+          console.log(getObjects(array1, "name", "samir")); 
+          // result: [ ]
+          
+          
   
+var library = [
+	{
+		author: 'Bill Gates',
+		title: 'The Road Ahead',
+		readingStatus: true,
+	},
+	{
+		author: 'Steve Jobs',
+		title: 'Walter Isaacson',
+		readingStatus: true,
+	},
+	{
+		author: 'Suzanne Collins',
+		title: 'Mockingjay: The Final Book of The Hunger Games',
+		readingStatus: false,
+	},
+];
+
+for (let i = 0; i < library.length; i++) {
+	if (library[i].readingStatus) {
+		console.log(
+			`Vec sam Procitao "${library[i].title}" by ${library[i].author}.`
+		);
+	} else {
+		console.log(
+			`Nisam Procitao "${library[i].title}" by ${library[i].author}.`
+		);
+	}
+}
+
+     

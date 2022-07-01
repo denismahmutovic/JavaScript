@@ -146,17 +146,17 @@
 //     console.log("test nije prosao",(data))
 // })
 
-const user = async ()=>{
-    const resposnee = await fetch("https://jsonplaceholder.typicode.com/users");
-    const post = await resposnee.json()
-    const trazi = post.filter((el)=> el.name === "Leanne Graham")
-    const trazi2 = post.filter((el)=>el.username === "Antonette" )
-    return trazi2.map((el)=>{
-        return {name:"Denis.m",id:el.id}
-    })
-} 
+// const user = async ()=>{
+//     const resposnee = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const post = await resposnee.json()
+//     const trazi = post.filter((el)=> el.name === "Leanne Graham")
+//     const trazi2 = post.filter((el)=>el.username === "Antonette" )
+//     return trazi2.map((el)=>{
+//         return {name:"Denis.m",id:el.id}
+//     })
+// } 
 
-user().then((res)=> console.log(res))
+// user().then((res)=> console.log(res))
 
 // const getUser = async () =>{
 // const resposne = await fetch("https://jsonplaceholder.typicode.com/users"
@@ -195,4 +195,54 @@ user().then((res)=> console.log(res))
 //   .then(res => res.json())
 //   .then(data => console.log(data))
 
+// ___________________________________zadnji cas___________________________________
 
+// map filet reduce
+//
+
+//   //makni duplake od niza
+
+const BASE_URL = "https://jsonplaceholder.typicode.com";
+
+const getUser = async ()=> {
+   const resposne = await fetch(BASE_URL + "/users");
+   const users = await resposne.json()
+   return users
+  
+ }
+ const myUsers = getUser().then((users)=>{
+     const newUsers = users.map((el)=>{
+         return{
+             name:el.name,
+             username:el.username,
+             phone:el.phone,
+             address:el.address
+             
+         };
+     });
+     return newUsers
+ })
+ myUsers.then((res)=> console.log(res))
+// const getUser =()=>{
+
+// fetch(`${BASE_URL}/users`)
+// .then((resonse)=> resonse.json())
+// .then((res)=>console.log(res))
+// .catch((err)=> {
+//     throw new Error("greska neka",err)
+// })
+// }
+// getUser()
+
+
+// call apply
+//  sta je thiss
+// osnovni tipovi padataka
+//spreed operatori
+//termni operatio
+
+
+// event loop kako radi  jedno od pitanja  da se opise 
+// razlika izmenju var i const
+
+// dev.to java
