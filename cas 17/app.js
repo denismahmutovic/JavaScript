@@ -202,27 +202,51 @@
 
 //   //makni duplake od niza
 
-const BASE_URL = "https://jsonplaceholder.typicode.com";
+// const BASE_URL = "https://jsonplaceholder.typicode.com";
 
-const getUser = async ()=> {
-   const resposne = await fetch(BASE_URL + "/users");
-   const users = await resposne.json()
-   return users
+// const getUser = async ()=> {
+//    const resposne = await fetch(BASE_URL + "/users");
+//    const users = await resposne.json()
+//    return users
   
+//  }
+// //  const myUsers = getUser().then((users)=>{
+//      const newUsers = users.map((el)=>{
+//          return{
+//              name:el.name,
+//              username:el.username,
+//              phone:el.phone,
+//              address:el.address
+             
+//          };
+//      });
+//      return newUsers
+//  })
+//  myUsers.then((res)=> console.log(res))
+
+ const BASE_URL = "https://jsonplaceholder.typicode.com"
+
+ const getUser = async()=>{
+     const resposne = await fetch(BASE_URL +"/users")
+     const posts = resposne.json()
+     return posts
  }
- const myUsers = getUser().then((users)=>{
-     const newUsers = users.map((el)=>{
+ const MyUsers = getUser().then((arr)=>{
+     const news = arr.map((el)=>{
          return{
              name:el.name,
-             username:el.username,
-             phone:el.phone,
-             address:el.address
-             
-         };
-     });
-     return newUsers
+             email:el.email
+         }
+     })
+     return news
  })
- myUsers.then((res)=> console.log(res))
+ MyUsers.then((res)=> console.log(res))
+.catch((err)=> console.log("ERRRO",err))
+
+
+
+
+
 // const getUser =()=>{
 
 // fetch(`${BASE_URL}/users`)
@@ -240,7 +264,7 @@ const getUser = async ()=> {
 // osnovni tipovi padataka
 //spreed operatori
 //termni operatio
-
+//arrry funcija
 
 // event loop kako radi  jedno od pitanja  da se opise 
 // razlika izmenju var i const
