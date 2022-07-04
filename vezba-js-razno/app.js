@@ -508,3 +508,82 @@ for (let i = 0; i < library.length; i++) {
 
   
      
+const DATA  = [10,20,30,40,50,60,100,299]
+const imena= ["denis","beni","mare"]
+novaFun =(arr)=>{
+    const parni = arr.filter((el)=> el %2 === 0)
+    const zbir = parni.reduce((total,value)=> total+value ) / parni.length
+    const Velika = imena.map((el)=> el.toUpperCase())
+    return Velika
+}
+console.log(novaFun(DATA))
+
+
+
+
+
+// const BASE_URL = "https://jsonplaceholder.typicode.com"
+
+// const getUser = async()=>{
+//     const resposne = await fetch(BASE_URL +"/users")
+//     const posts = resposne.json()
+//     return posts
+// }
+// const MyUsers = getUser().then((arr)=>{
+//     const news = arr.map((el)=>{
+//         return{
+//             name:el.name,
+//             email:el.email
+//         }
+//     })
+//     return news
+// })
+// MyUsers.then((res)=> console.log(res))
+// .catch((err)=> console.log("ERRRO",err))
+
+
+const BASE_URL = "https://jsonplaceholder.typicode.com"
+
+ const getUsers = async()=>{
+     const response = await fetch(BASE_URL+"/photos?id=15")
+     const users = await response.json()
+     return users
+
+ }
+ const myUsers = getUsers().then((arr)=>{
+     const neww = arr.map((el)=>{
+         return{
+             name:el.name,
+             title:el.title,
+             url:el.url
+         }
+     })
+     return neww
+ })
+ myUsers.then((res)=> console.log(res))
+
+
+let age = 26
+let baverage = (age>21)? "pivo" : "sok"
+console.log(baverage)
+
+
+// call apply 
+//  sta je thiss = 
+// osnovni tipovi padataka
+//spreed operatori - nam omugucava da brzo kopiramo celi deo postojeceg niza ili objekta u drugi niz ili objekat
+
+//termni operatio
+//arrry funcija
+
+// event loop kako radi  jedno od pitanja  da se opise =
+//= kada pozovemo funciju ona ide u web-api i tamo izvsava tajmer koliko je zadat,onda kada zavrsi tajmer
+// ne vraca se odmah u call stack  nego ide u que kad se isprazni
+
+
+//kako radi ajax api  Front-end i Back-End mogu da komuniciraju preko API i na taj nacin mozemo da saljemo
+// i da primamo JSON- podaci [Frond-end koisti JS] a [Back-END PHP]
+
+// razlika izmenju var i const
+
+ 
