@@ -40,8 +40,11 @@ recenica.remove()
 
 let novi = document.createElement("div")
 let body = document.querySelector("body")
-body.appendChild(novi)
+body.appendChild(novi) // na kraju body taga dodajmo nas novi element
 novi.classList = "denis"
 novi.innerText = "kralj"
+
+
+
 
 
