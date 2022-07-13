@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The to do list</title>
     <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="border">
-            <h2>My to do list</h2>
-            <input type="text" id="myinput" placeholder="Title...">
-            <span onclick="newElement ()" class="addbtn">Add</span>
-
-
+    <div class="holder">
+        <h1>My ToDo list</h1>
+        <p>Click on task to mark as completed.</p>
+        <div class="new-task">
+            <input type="text" name="new-task" id="new-task" placeholder="Type...">
+            <button id="create-task">Add task</button>
         </div>
+        <ul class="all-tasks"></ul>
     </div>
-    <ul id="myul">
-        <li>Lorem, ipsum.</li>
-        <li class="checked">Lorem, ipsum.</li>
-        
-
-
-    </ul>
-    
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./app.js"></script>
+    <script src="./proba.js"></script>
 </body>
+
 </html>
+

@@ -1,33 +1,22 @@
-var lista = document.getElementsByTagName("Li") 
+//  Elements
+let taskInput = document.querySelector("#new-task")
+let aliTask = document.querySelector(".all-tasks")
+const btnAdd = document.querySelector("#create-task")
 
-var i;  
-for (i = 0; i < lista.length; i++ ){
-    var span = document.createElement("SPAN");
-    var txt = document.createElement("/u00d7")
-    span.className = "close";
-    span.appendChild(tnx);
-    lista[i].appendChild(span);
+function addTack(event) {
+event.preventDefault();
+
+let inputValue = taskInput.value;
+if(inputValue === ""){
+    alert("prazno polje")
+} else{
+    aliTask.innerHTML += `<li class="task">
+    <p>${inputValue}</p>
+    <button class="delete" title="Delete>x</button>
+    </li>`
+    taskInput.value = "";
+    taskInput.focus();
+
 }
-
-// close dugme
-
-var close = document.getElementsByClassName("close");
-var i;
-for(i = 0; i< close.length; i++){
-    close[i].onclick = function (){
-        var div = this.parentElement;
-        div.style.display = "none";
-
-    
-    }
 }
-var list = document.querySelector ("ul")
-list.addEventListener("click", function(ev){
-    if (ev.target.tagName === "li"){
-        ev.target.classList.toggle ("cheked");
-    }
-},false);
-
-
- var list = document.querySelector("ul")
- 
+btnAdd.addEventListener("click",addTack);   
