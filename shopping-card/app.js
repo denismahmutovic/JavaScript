@@ -1,7 +1,7 @@
 let allTotal = 0; // dugme za total za izdracuna sve 
 function addToCart(element){  
 let mainEl = element.closest('.single-item'); // uzimamo sve iz clase/ h3 cene...
-let price = mainEl.querySelector ('.price').innerText; //uzvecemo $ cenu sa innerText
+let price = mainEl.querySelehctor ('.price').innerText; //uzvecemo $ cenu sa innerText
 let name = mainEl.querySelector ("h3").innerText; //izvukli ime innerText;
 let quantity = mainEl.querySelector ("input").value; // za input stavljamo value //  quantity html name 
 let cartItems = document.querySelector (".cart-items"); //dodali clasu korpu gde smestamo sta smo dodali

@@ -74,15 +74,5 @@
 //     // gl_div.innerHTML = `<span> Klikni ovaj link: <a href="#">klick</a></span>` 
 
 // }
-function validacija(){
-    let input = document.querySelector("#email")
-    let value = input.value
-    if(value.includes("@") && value.includes(".")){
-        
-    } else{
-        console.log("Mail nije validan")
-    }
-    
-}
 
 
