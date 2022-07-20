@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 100px auto;
+        margin-left: 500px ;
+    }
+</style>
+<body>
+    
+    <div class="single-item">
+        <div class="b">
+            <img src="./lidl-plus-1.png" alt="">
+        </div>
+        <img src="./cips.jpg">
+        <div class="si-content">
+            <h3>
+            Čips sa ukusom paprike</h3>
+            <div class="a">
+                <h4>21.04.227.04</h4>
+            </div>
+            <div class="c">
+                -23%
+            </div>
+            <p class="price">$10</p>
+        </div>
+        <div class="actions">
+            <input type="number" name="quantity" value="0" min="0">
+            <button onclick="addToCart(this)">Dodaj</button>
+        </div>
+    </div>
+
+
+    <div class="cart">
+        <h2>Korpa</h2>
+        
+        <div class="cart-items"></div>
+        
+
+        <div class="total"></div>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
