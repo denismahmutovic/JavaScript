@@ -34,4 +34,14 @@ function removeFromcart (element){
     
     mainEl.remove()
     document.querySelector(".total").innerHTML = `total: ${allTotal}`
+    vagetables.forEach(function (vege){
+        let itemName = vege.querySelector(".si-content h3").innerText;
+        if (itemName === name){
+         vage.querySelector(".actions input").value = 0 // actions je classa
+         vage.querySelector(".actions button").removeAttribute ("disabled"); // actions je clasa
+         vage.querySelector(".actions button").innerHTML = "Dodaj";
+        }
+            
+        });
+    }
 }
