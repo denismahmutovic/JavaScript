@@ -2,7 +2,7 @@ const glavniDiv = document.querySelector("#pocetak")
 const body = document.querySelector("body")
 const paragraf = document.createElement("p")
 paragraf.textContent = "ovo je p dodat i js"
-glavniDiv.append(paragraf)
+glavniDiv.appendChild(paragraf)
 glavniDiv.classList.add("kocka") // dodavanje classe
 paragraf.classList.add("text")
 const dugme = document.createElement("button")

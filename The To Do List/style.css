@@ -16,7 +16,7 @@ body {
 body {
   display: grid;
   place-items: center;
-  background: url(/background.gif);
+  /* background: url(/background.gif); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

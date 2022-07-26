@@ -1,55 +1,61 @@
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-  
-}
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+// console.dir(document);
+// console.log(document.domain)
+// console.log(document.URL)
+// console.log(document.title)
+// document.title = "hello"
+// console.log(document.all)
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+// const headerTitle = document.getElementById("header-title")
+// console.log(headerTitle)
+// headerTitle.textContent = "Hello"
+// headerTitle.innerText = 'Goodbye'
+// headerTitle.style.borderBottom = "solid 3px red"
+// headerTitle.style.fontSize = "30px"
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myinput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myul").appendChild(li);
-  }
-  document.getElementById("myinput").value = "";
+// let items = document.getElementsByClassName("list-group-item")
+// console.log(items)
+// console.log(items[1])
+// items[1].textContent = "hello"
+// items[1].style.fontWeight = "bold"
+// items[1].style.backgroundColor = "yellow"
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+      //querySelector//
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
+// let header = document.querySelector("#main-header")
+// header.style.borderBotton = "solid 3px red"
+
+// let input = document.querySelector("input")
+// input.value = "Hello world"
+
+// let submit = document.querySelector(`input[type="submit"]`)
+// submit.value ="Send"
+
+// let item = document.querySelector(".list-group-item")
+// item.style.color = "red" //prva
+
+// let lastItem = document.querySelector(".list-group-item:last-child")
+// lastItem.style.color = "blue" // zadnja
+
+// let secondItem = document.querySelector(".list-group-item:nth-child(2)")
+// secondItem.style.color = "coral" // biramo sami mesto na koje zelimo boju da primeniomo
+
+//    QUERYSELECTOR ALL
+
+let title = document.querySelectorAll(".title")
+console.log(title)
+title[0].textContent = "Hello"
+
+
+let odd = document.querySelectorAll("li:nth-child(odd)")
+for(let i = 0;i < odd.length; i++){
+  odd[i].style.backgroundColor = "red"
+}  //Svaki parni da bude crven
+
+let even = document.querySelectorAll("li:nth-child(even)")
+for(let i = 0; i < even.length;i++){
+  even[i].style.backgroundColor = "yellow"
+}  // svaki neparni da bude zut
+// --------------------------------Prvi tutorial----------------------------------
+
+
