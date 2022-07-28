@@ -63,15 +63,15 @@
 
 
  // parentElement
-let itemList = document.querySelector("#items")
-// childnodes
-// console.log(itemList.parentNode)
-// itemList.parentNode.style.backgroundColor = "#f4f4f4"
-// console.log(itemList.parentNode.parentNode)
+// let itemList = document.querySelector("#items")
+// // childnodes
+// // console.log(itemList.parentNode)
+// // itemList.parentNode.style.backgroundColor = "#f4f4f4"
+// // console.log(itemList.parentNode.parentNode)
 
-console.log(itemList.children)
-console.log(itemList.children[2]);
-itemList.children[1].style.backgroundColor = "yellow"
+// console.log(itemList.children)
+// console.log(itemList.children[2]);
+// itemList.children[1].style.backgroundColor = "yellow"
 
 // itemList.childNodes[2].textContent = "text" // ubacujeno novi item
 // FirsChild
@@ -81,33 +81,131 @@ itemList.children[1].style.backgroundColor = "yellow"
 
 
 // lastChild
-console.log(itemList.lastElementChild)
-// LastElementChild
-itemList.lastElementChild.textContent = "Hello 1"  // zadnje na listi menjamo ime u Hello 1
+// console.log(itemList.lastElementChild)
+// // LastElementChild
+// itemList.lastElementChild.textContent = "Hello 1"  // zadnje na listi menjamo ime u Hello 1
 
-console.log(itemList.nextElementSibling)  // trazi sledeci elemenat div,span..
-console.log(itemList.previousElementSibling) // trazi prehodni elemant div...
+// console.log(itemList.nextElementSibling)  // trazi sledeci elemenat div,span..
+// console.log(itemList.previousElementSibling) // trazi prehodni elemant div...
 
-// Create a Div
+// // Create a Div
 
-let newDiv = document.createElement("div")
-newDiv.className = "hello"
-newDiv.id = "hello1"
-newDiv.setAttribute("title","hello div")
-let newDivText = document.createTextNode("Hello world")
-newDiv.appendChild(newDivText)
+// let newDiv = document.createElement("div")
+// newDiv.className = "hello"
+// newDiv.id = "hello1"
+// newDiv.setAttribute("title","hello div")
+// let newDivText = document.createTextNode("Hello world")
+// newDiv.appendChild(newDivText)
 
-let container = document.querySelector("header .container")
-let h1 = document.querySelector("header h1")
-console.log(newDiv)
-container.insertBefore(newDiv,h1)
+// let container = document.querySelector("header .container")
+// let h1 = document.querySelector("header h1")
+// console.log(newDiv)
+// container.insertBefore(newDiv,h1)
 
 // ------------------------------KRAJ DRUGI DEO---------------------------------
 
+// ------------------------------TRECI DEO--------------------------------------
+
+// EVENTS 
+
+// let button = document.getElementById('button').addEventListener("click",buttonClick)
+// function buttonClick(e){
+//   // console.log("button clicked")
+//   // document.getElementById("header-title").textContent = "Promena title"
+//   // console.log(e.target)
+//   // console.log(e.target.className)
+//   // console.log(e.target.classList)
+
+//   console.log(e.altKey) //moram da se pretite alt pre click da bi bilo tacno
+
+// }
+
+// let button = document.getElementById("button")
+// let box = document.getElementById("box")
+// box.addEventListener("mouseenter", runEvent) // prelazak preko misa se desava dogadjaj
+// box.addEventListener("mouseleave", runEvent)
+// box.addEventListener("mouseover",runEvent) // prelazom na text aktivira se dogadjaj
+// form.addEventListener("submit", runEvent)
+
+// function runEvent (e){
+//   e.preventDefault()
+//   console.log("EVENT TYPE: "+e.type)
+  
+// }
+// ____________________________ KRAJ TRECI DEo___________________________________
 
 
 
+// ---------------------------------Final project-----------------------------------------
+
+let form = document.getElementById('addForm');
+let itemList = document.getElementById('items');
+let filter = document.getElementById("filter")
+
+
+// Form submit event
+form.addEventListener('submit', addItem);
+
+    // DELETE EVENT
+
+    itemList.addEventListener("click",removeItem)
+
+    // Filte event
+    filter.addEventListener("keyup", filterItems)
 
 
 
+function addItem(e){
+  e.preventDefault();
 
+  // Get input value
+  let newItem = document.getElementById('item').value
+
+  // Create new li element
+ let  li = document.createElement('li');
+  
+  li.className = 'list-group-item';
+  li.appendChild(document.createTextNode(newItem))
+
+    // add delete dugme
+  let deleteBtn = document.createElement("button")
+  deleteBtn.className = "btn btn-danger btn-sm float-right delete"
+  deleteBtn.appendChild(document.createTextNode("X"))
+  deleteBtn.style.background = "#dc3545"
+  li.appendChild(deleteBtn)
+
+
+  itemList.appendChild(li)
+
+  }
+
+  // Remove Item
+
+  function removeItem(e){
+    if(e.target.classList.contains('delete')){
+      if(confirm('Are You Sure?')){
+        let li = e.target.parentElement;
+        itemList.removeChild(li);
+        
+      }
+    }
+  }
+
+  // Filter items (search)
+
+  function filterItems(e){
+    // convert text to lowercase
+    var text = e.target.value.toLowerCase();
+    // Get lis
+    var items = itemList.getElementsByTagName('li');
+    // Convert to an array
+    Array.from(items).forEach(function(item){
+      let itemName = item.firstChild.textContent;
+      if(itemName.toLowerCase().indexOf(text) != -1){
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+  R
